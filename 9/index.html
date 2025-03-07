@@ -1,0 +1,1242 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="http://localhost/9/">
+      
+      
+        <link rel="prev" href="../8/">
+      
+      
+        <link rel="next" href="../10/">
+      
+      
+      <link rel="icon" href="../icob.svg">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.7">
+    
+    
+      
+        <title>9 Syntax - Ithdocs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.8608ea7d.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../style.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="red" data-md-color-accent="red">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Ithdocs" class="md-header__button md-logo" aria-label="Ithdocs" data-md-component="logo">
+      
+  <img src="../ico.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Ithdocs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              9 Syntax
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Ithdocs" class="md-nav__button md-logo" aria-label="Ithdocs" data-md-component="logo">
+      
+  <img src="../ico.svg" alt="logo">
+
+    </a>
+    Ithdocs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Intro
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1 Phonology
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2 Morphophonology
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3 Basic Morphology
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    4 Cases
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    5 Verbs
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../6/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    6 More Verbs
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../7/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    7 Suffixes
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../8/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    8 Adjuncts
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    9 Syntax
+    
+  </span>
+  
+
+      </a>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    10 Lexicosemantics
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../11/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    11 Script
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../12/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    12 Numbers
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lexicon/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lexicon
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../abbr/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Abbreviations
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_16" >
+        
+          
+          <label class="md-nav__link" for="__nav_16" id="__nav_16_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Appendix
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_16_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_16">
+            <span class="md-nav__icon md-icon"></span>
+            Appendix
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../update/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Updates
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../supp/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Supplemental Lexicon
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../addsuff.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Additional Suffixes
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../errata/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Errata
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>9 Syntax</h1>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>A Grammar of the Ithkuil Language - Chapter 9: Syntax</title>
+<style type="text/css">
+<!--
+.style2 {   font-family: Georgia, "Times New Roman", Times, serif;
+    font-weight: bold;
+    color: #999999;
+}
+.style3 {font-family: Arial, Helvetica, sans-serif; font-weight: bold; font-size: small; color: #0000FF; }
+.style26 {font-weight: bold; font-size: small; font-family: Arial, Helvetica, sans-serif;}
+.style27 {font-size: large}
+.style29 {font-size: small}
+.style30 {font-family: Arial, Helvetica, sans-serif; font-size: small; }
+.style17 {font-size: x-small}
+.style20 {font-family: Geneva, Arial, Helvetica, sans-serif;
+    font-size: medium;
+}
+.style25 {  font-size: x-large;
+    font-weight: bold;
+}
+.style49 {
+    color: #FF0000;
+    font-weight: bold;
+}
+.style51 {font-family: Geneva, Arial, Helvetica, sans-serif; font-size: small; }
+.style46 {  font-family: Geneva, Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+}
+.style47 {font-weight: bold; font-family: Geneva, Arial, Helvetica, sans-serif;}
+-->
+</style>
+</head>
+
+<body>
+
+<p align="justify" class="style27"><br />
+  Syntax refers to the rules for sequencing the order of words 
+  within a phrase or sentence, including rules permitting more than one possible 
+  sequential ordering of words. To understand the following discussion of Ithkuil 
+  syntax it is necessary to have a cursory understanding of the notions of <em>semantic 
+    role</em>, <em>pragmatic role</em>, and <em>grammatical</em> (or <em>syntactical</em>) <em>relations</em>:</p>
+<div align="justify" class="style27">
+  <ul>
+    <li><strong>Semantic role</strong>: This refers to the underlying semantic 
+      function of a particular word, irrespective of overt morphological category. 
+      We have already seen how Ithkuil marks its noun cases to reflect semantic 
+      roles, not grammatical relations. Such roles include Agent, Patient, Experiencer, 
+      Recipient, Instrument, etc., as previously explained in <a href="04_case.html#Sec4o1">Section 
+    4.1</a> et seq.<br />
+        <br />
+    </li>
+    <li><strong>Pragmatic role</strong>: This refers to the function of a word 
+      or phrase in relation to its predicate or the rest of the sentence in terms 
+      of whether and how it represents &#8220;given&#8221; versus &#8220;new&#8221; 
+      information, i.e., whether or not the word or phrase represents background 
+      information already known to the addressee, or whether it represents new 
+      information previously unknown to the addressee. Three such roles or relations 
+      are generally delineated: <strong>topic,</strong> <strong>comment</strong>, 
+      and <strong>focus</strong>. The <em>topic</em> of a sentence is the word 
+      or phrase about which the speaker has been asked or is expected by the addressee 
+      to talk about. The <em>comment</em> is the information (usually a predicate) 
+      given by the speaker about the particular topic. The term <em>focus</em> refers to whatever information in a sentence is new to the addressee, (i.e., 
+      not previously known).  To illustrate these concepts, consider the sentence <em>I can see 
+          why Mary&#8217;s angry, but what about Bill?</em> (i.e., <em>What happened 
+            to make Bill angry, too?</em>). In the hypothetical answer <em>Bill (or 
+              He) is angry because he lost his keys</em>, &#8216;Bill&#8217; (or &#8216;he&#8217;) 
+      is the topic, &#8216;is angry because he lost his keys&#8217; is the comment, 
+      and &#8216;he lost his keys&#8217; is the focus.<br />
+      <br />
+    </li>
+    <li><strong>Grammatical </strong>(or<strong> syntactical</strong>)<strong> relations</strong>: the arbitrary word-ordering rules of a language, irrespective 
+      of semantic or pragmatic roles, e.g., the subject of the sentence in English 
+      normally precedes the main verb and the direct object normally follows the 
+      main verb.</li>
+  </ul>
+</div>
+<p align="justify" class="style27">In general, the syntax of a language either (1) establishes 
+  the permissible grammatical relations of the language, (2) reflects and/or reinforces 
+  semantic roles, (3) reflects and/or reinforces pragmatic roles, or (4) any combination 
+  of these. As one might surmise from the above, English syntax is weighted heavily 
+  toward establishing grammatical relations at the near-total expense of identifying 
+  semantic roles. As for pragmatic roles, English rarely reflects these in its 
+  syntax (one exception is the strong tendency for placing <em>wh</em>- question 
+  words in sentence-initial position in specialized questions, even if they represent 
+  a direct object, e.g., <em>What have you done?</em> or <em>Who[m] are they talking 
+    about?</em>), however, such roles do tend to be marked &#8220;supra-segmentally&#8221; 
+  by inflection of vocal pitch and tone of voice. </p>
+<p align="justify" class="style27">We have already seen the extreme to which Ithkuil uses noun cases to mark semantic 
+  roles morphologically as opposed to syntactically. And since grammatial relations 
+  in and of themselves are relatively arbitrary within language, Ithkuil uses 
+   word order primarily to accomplish pragmatic relations, i.e., to indicate the topic and/or focus of a sentence. Additionally, Ithkuil does have a few word order constraints  necessary to ensure avoidance 
+  of ambiguity in determining which  
+  nouns lie in apposition to their head, and which words of a compound sentence 
+  lie within a case-frame as opposed to outside the case-frame. The specifics of Ithkuil word order are explained in Section 9.1 below.</p>
+<p align="justify" class="style27">&nbsp;</p>
+<p class="style27"><strong><a name="Sec9o1" id="Sec9o1"></a></strong><br />
+</p>
+<table width="100%" border="0" cellpadding="0" bgcolor="#CCCCCC">
+  <tr>
+    <td class="style27"><div><strong>9.1 TOPIC, FOCUS, AND PRAGMATIC RELATIONS</strong></div></td>
+  </tr>
+</table>
+<p align="justify" class="style27">The concept of semantic focus refers to what 
+  information in an utterance is to be considered new information, while the semantic topic is the
+  background context already known or implied. The specifics are explained below and are best understood 
+through various English illustrations.</p>
+<p align="justify" class="style27">In any given discourse (i.e., a contextual series of utterances 
+  such as a conversation, a story, an account of an event, etc.), any single sentence 
+  of that discourse will likely make reference to previously mentioned material 
+  as background, as well as present new material to further the purpose of the 
+  discourse. Semantic focus refers to those elements of a sentence which constitute 
+  new material within an actual or implied discourse. For example, the sentence <em>My dog jumps through hoops</em> could function as an answer to several different 
+  questions such as 1) <em>What tricks can your dog do?</em>, or 2) <em>Does your 
+    dog do anything with hoops? </em>or 3) <em>Do you know of anyone&#8217;s pet 
+      that jumps through hoops?</em> or even 4) <em>What&#8217;s up with you?</em> In answering the first of these questions, &#8216;jump through hoops&#8217; 
+  would have semantic focus while the dog is background material, i.e. the topic. In answering 
+  the second question, the verbal phrase &#8216;jump through&#8217; would have 
+  focus while both the dog and the hoops would be the topic. In answering 
+  the third question, it would be &#8216;my dog&#8217; that carries the focus 
+  while jumping through hoops would be the topic. Lastly, in answering the 
+  fourth sentence, no element in the sentence has focus over any other, as all 
+  elements present previously unknown material within the context of the discourse. 
+  In general, English conveys focus by a shift in vocal inflection (tone and pitch 
+  contours) to provide emphasis.</p>
+<p align="justify" class="style27">Focus does not necessarily require a full discourse to have 
+  semantic relevance; it can occur within a single autonomous sentence, in which 
+  case the background discourse is implied. For example, a person might spontaneously 
+  begin a conversation with the same sentence: <em>My dog jumps through hoops.</em> In 
+  English, the speaker might use vocal inflection to emphasize what elements convey 
+  semantic focus versus what elements are to be taken by the listener as &#8220;given.&#8221; 
+  Or, the speaker might say the sentence in a neutral tone of voice, essentially 
+  inviting the listener to &#8220;choose&#8221; which elements to focus upon in 
+  responding, e.g., <em>Oh, you have a dog?</em> or <em>Oh, does he do any other 
+    tricks? </em>or <em>Oh, do you use metal or plastic hoops?</em> or an equally 
+  neutral response such as <em>Oh, you don&#8217;t say?</em></p>
+<p align="justify" class="style27">Ithkuil uses word-order to  accomplish the same options 
+  that such vocal inflections accomplish in English. In Ithkuil, the element with focus is placed immediately before the verb.  As for the topic of the sentence, this is shown by placing it as the first element in a sentence. If there is no overt topic or focus, the verb will appear as the first word in the sentence. Examples: </p>
+<blockquote class="style27">
+  <p align="left"><strong><br />
+    <img src="/images/9-1a.jpg" width="165" height="37" /><br />
+    Euspoigrata&igrave;&nbsp;   ek&scaron;&uacute;l&nbsp; b&#345;at&#316;.</strong><br />
+    <font face="Arial, Helvetica, sans-serif"><span class="style29">DYN-[inc.stem: &lsquo;buy&rsquo;]-<font face="Arial, Helvetica, sans-serif">consume/ingest&rsquo;-NRM/</font>DEL/U/CSL/UNI-<font face="Arial, Helvetica, sans-serif">IFL-PRT</font> &nbsp; &nbsp;STA-&lsquo;clown&rsquo;-IND<font face="Arial, Helvetica, sans-serif">-NRM/DEL/M/CSL/UNI-FML &nbsp;&nbsp;<br />
+    STA-</font>&lsquo;clam&rsquo;-OBL-NRM/DEL/M/CSL/DCT-IFL</span></font><br />
+    <em>The clown bought some clams and consumed them.</em> (No topic or focus)  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="style29"><a href="sound_files/9-1a.mp3" target="_blank">LISTEN</a></span>&nbsp;<a href="sound_files/9-1a.mp3" target="_blank"><img src="/images/Audio_icon.gif" width="19" height="16" border="0" align="absmiddle" /></a></p>
+  <p align="justify">&nbsp;</p>
+  <p align="justify"><strong><img src="/images/9-1b.jpg" width="168" height="37" /><br />
+    Ek&scaron;&uacute;l  &nbsp;euspoigrata&igrave;&nbsp; b&#345;at&#316;.</strong><br />
+    <font face="Arial, Helvetica, sans-serif"><span class="style29">STA-&lsquo;clown&rsquo;-IND<font face="Arial, Helvetica, sans-serif">-NRM/DEL/M/CSL/UNI-FML &nbsp;&nbsp;</font> &nbsp;DYN-[inc.stem: &lsquo;buy&rsquo;]-<font face="Arial, Helvetica, sans-serif">consume/ingest&rsquo;-NRM/</font>DEL/U/CSL/UNI-<font face="Arial, Helvetica, sans-serif">IFL-PRT</font> &nbsp;<font face="Arial, Helvetica, sans-serif"><br />
+STA-</font>&lsquo;clam&rsquo;-OBL-NRM/DEL/M/CSL/DCT-IFL</span></font><span class="style29"><br />
+    </span><em>It was the clown who bought some clams and consumed them. </em>(The clown is the focus) </p>
+  <p align="left">&nbsp;</p>
+  <p align="left"><strong><img src="/images/9-1c.jpg" width="165" height="37" /><br />
+    B&#345;at&#316;  &nbsp;ek&scaron;&uacute;l  &nbsp;euspoigrata&igrave;.</strong><br />
+    <font face="Arial, Helvetica, sans-serif"><span class="style29"><font face="Arial, Helvetica, sans-serif"> STA-</font>&lsquo;clam&rsquo;-OBL-NRM/DEL/M/CSL/DCT-IFL <font face="Arial, Helvetica, sans-serif">&nbsp;&nbsp;</font> &nbsp;STA-&lsquo;clown&rsquo;-IND<font face="Arial, Helvetica, sans-serif">-NRM/DEL/M/CSL/UNI-FML &nbsp;&nbsp;</font> &nbsp;<br />
+    DYN-[inc.stem: &lsquo;buy&rsquo;]-<font face="Arial, Helvetica, sans-serif">consume/ingest&rsquo;-NRM/</font>DEL/U/CSL/UNI-<font face="Arial, Helvetica, sans-serif">IFL-PRT</font></span></font><span class="style29"><br />
+    </span><em>As for the clams, it was the clown who bought  and consumed them.</em> (The clams are the topic; the clown is the focus) </p>
+</blockquote>
+<p align="justify" class="style27">&nbsp;</p>
+<p align="justify" class="style27"><a name="Sec9o2o2" id="Sec9o2o2"></a></p>
+<h3 align="justify" class="style27">9.1.1 Abbreviated Sentences Using Focus and Topicalization</h3>
+<p align="justify" class="style27">Focus and topicalization allow Ithkuil, as with other languages, 
+  to provide abbreviated sentences in direct answer to commands,  questions, 
+  or to comment on a topic already under discussion. Because the topic is already 
+  known within the contextual discourse, only the portion of the new sentence 
+  carrying semantic focus need be spoken. Similarly, the <a href="07_suffixes.html#Sec7o4o13">topicalization 
+    suffix</a> in conjunction with the <a href="05_verbs_1.html#Sec5o3o3">INTERROGATIVE</a> illocution, allows for abbreviated inquiries within a known contextual 
+  discourse, similar to such abbreviated sentences in English, e.g., &#8216;and 
+  Bill?&#8217; in lieu of the full sentence &#8216;Comment on how this applies 
+  to Bill.&#8217;</p>
+<p align="justify" class="style27">&nbsp;</p>
+<h3 align="justify" class="style27">9.1.2 Word-order within Case-Frames</h3>
+<p align="justify" class="style27">Within a case-frame (see <a href="05_verbs_1.html#Sec5o4">Section 
+  5.4</a>), the verb always appears in initial position to identify the clause 
+  as a case frame (using <a href="05_verbs_1.html#Sec5o4o1">FRAMED Relation</a> in the verb). Because of this, it becomes necessary to utilize the focusing and sequencing affixes from Sec. 7.4.13 to identify elements which carry focus or are topicalized within the case-frame. Additionally, the last noun within the case-frame 
+  will usually take the -<strong>Vt&#8217;</strong> in degree 2, 6, 7, or 9 (see <a href="07_suffixes.html#Sec7o4o13">Sec. 7.4.13</a>) 
+  to signify the end of the case-frame, unless this is clear without the suffix 
+  (e.g., because the case-frame is in sentence-final position). </p>
+<p align="justify" class="style27">&nbsp;</p>
+<h3 align="justify" class="style27">9.1.3 Additional Constraints in Word Order</h3>
+<p align="justify" class="style27">The following additional word-order constraints exist 
+  in order to avoid potential ambiguity or semantic incoherence.</p>
+<ul class="style27">
+  <li>
+    <div align="justify">Nouns in Possessive and Associative cases (see <a href="04_case.html#Sec4o4">Secs. 
+      4.4</a> and <a href="04_case.html#Sec4o5">4.5</a>) 
+      which are dependent on, or in apposition to a &#8220;head&#8221; noun, must 
+      immediately precede or follow that head noun, unless the relationship between the two nouns is otherwise clear from context or other morphological elements.<br />
+      <br />
+      </div>
+  </li>
+  <li>
+    <div align="justify">A case-frame cannot be broken apart into segments within a main sentence, 
+      i.e., the case-frame must constitute a single cohesive clause and not contain 
+      elements of the main clause within it. It is possible to &#8220;nest&#8221; 
+      a second case-frame within a case-frame, similar to the way in which subordinate 
+      or relative clauses can be nested in English and other Western languages, 
+      e.g., <em>[Despite owning a Picasso [that comes from his Blue period] [of 
+        which I, [a mere student,] am fond,]] Joe is actually a very humble person</em>.</div>
+  </li>
+</ul>
+<p class="style27">&nbsp;</p>
+<h3 align="justify" class="style27"> 9.1.4 Phonotactically-Induced Syntactic Modifications </h3>
+<p align="justify" class="style27">As mentioned above, word-order can shift in an Ithkuil sentence 
+  to accommodate phonotactic or phonaesthetic ends, i.e., for purposes of euphony. 
+  This is because suffixes on a formative, as well as morphemes associated with 
+  categories of Aspect and Bias can be moved to verbal adjuncts or transformed into autonomous adjuncts (see Sections <a href="06_verbs_2.html#Sec6o3">6.3</a>, <a href="08_adjuncts.html#Sec8o2">8.2</a>, <a href="08_adjuncts.html#Sec8o3">8.3</a>, and <a href="08_adjuncts.html#Sec8o4">8.4</a>). As 
+   words 
+  of six syllables or more are generally undesirable,  any formative 
+  with numerous affixes is potentially subject to having several of its morphemes 
+  redistributed to adjuncts. </p>
+<p align="justify" class="style27">Example: </p>
+<blockquote class="style27">
+  <p align="justify"><strong><img src="/images/5-10-33c.jpg" width="133" height="46" /><br />
+Ar-ryigrawilei&#355;rar&nbsp;  eglul&ocirc;n. </strong><span class="style25">&rarr; </span><strong>&Ccedil;tar-rya&nbsp; <strong>ei<strong><strong>r</strong></strong>&#355;</strong> <strong>&nbsp;</strong>igralar&nbsp;  eglul&ocirc;n.</strong><br />
+<span class="style20"><span class="style29">MNO-PCL-DYN-&lsquo;eat.food&rsquo;-HOR/FAC-NRM/DEL/M/CSL/UNI-EXT<span class="style17">2</span>/6-NA1<span class="style17">1</span>/5-IFL&nbsp;&nbsp;  &nbsp;&nbsp;STA-&lsquo;illness&rsquo;-IND-NRM/DEL/M/CSL/UNI-AGC<span class="style17">2</span>/7-IFL</span><span class="style25"> &rarr; </span><br />
+<span class="style29">HOR/PPS/CTX-PCL</span> <span class="style29">&nbsp;&nbsp; EXT<span class="style17">2</span>/6&nbsp;&nbsp;   &nbsp;DYN-&lsquo;eat food&rsquo;-NRM/DEL/M/CSL/UNI-NA1<span class="style17">1</span>/5-IFL&nbsp;&nbsp;  &nbsp;&nbsp;STA-&lsquo;illness&rsquo;-IND-NRM/DEL/M/CSL/UNI-AGC<span class="style17">2</span>/7-IFL</span></span><em><br />
+If only the physician wouldn&rsquo;t  eat his food in one gulp like that.</em></p>
+</blockquote>
+<p align="justify" class="style27">When ordering such phonaesthetically-induced adjuncts, it is 
+  important that they can be easily associated with the formative to which they 
+  apply. Generally, this means that they will be adjacent to the formative, or 
+  occur on either side of other adjuncts associated with the formative.</p>
+<h3 align="justify" class="style27"><br />
+  9.1.5 Iconicity </h3>
+<p align="justify" class="style27">English and other languages generally display phrase-structure 
+  patterns and word-order patterns which reinforce, or even reflect, a cognitive 
+  understanding of what is being described, i.e., the order of the words themselves 
+  reflects information about how we are to understand the utterance. Such a phenomenon 
+  is known as <strong>iconicity</strong>. In English and other Western languages, 
+  the most common way in which iconicity is manifested is what is termed &#8220;sequential 
+  order iconicity,&#8221; the idea that the actual sequential order of words in 
+  a phrase or sentence reflects the sequential order of the events they describe. 
+  For example, the phrases &#8216;eye it, try it, buy it,&#8217; &#8216;I came, 
+  I saw, I conquered,&#8217; or &#8216;dine and dash&#8217; describe sequential 
+  events where the sequence of the words reflect the sequence of the events. What 
+  is most important is that re-ordering of the words either changes the meaning 
+  of the phrase or leads to semantic nonsense, e.g., &#8216;buy it, eye it, try 
+  it&#8217; implies that a different sequence of events actually takes place than 
+  &#8216;eye it, try it, buy it.&#8217; This can be more dramatically illustrated 
+  with the following pair of sentences.</p>
+<blockquote class="style27">
+  <p align="justify">1) <em>Jane got married and had a baby.</em><br />
+    2) <em>Jane had a baby and got married.</em></p>
+</blockquote>
+<p align="justify" class="style27">In English, the ambiguous word &#8216;and&#8217; is interpreted 
+  as connecting a sequence of events, i.e., &#8216;and&#8217; is interpreted to 
+  mean sequential &#8216;then&#8217; (= &#8216;and following that,&#8217; &#8216;then 
+  next&#8217; or &#8216;then later&#8217;). As a result, the meanings of the two 
+  sentences imply very different social interpretations about Jane.</p>
+<p align="justify" class="style27">Besides the reflection of sequential order, other types of 
+  word-order iconicity are possible. For example, compare the subtle difference 
+  in meaning between the following two sentences:</p>
+<blockquote class="style27">
+  <p align="justify">3) <em>Sam painted the fence white.</em><br />
+    4) <em>Sam painted the white fence.</em></p>
+</blockquote>
+<p align="justify" class="style27">In the first sentence, we do not know what color the fence 
+  was prior to being painted, or even if it was a new fence that had never been 
+  painted before. In the second sentence, not only do we know what color the fence 
+  had been, but also that it was not previously unpainted, however, we do not 
+  necessarily know what its new color is. This sort of iconicity is used to convey 
+  a resultative state of affairs, i.e., by placing the adjective &#8216;white&#8217; 
+  after the word &#8216;fence&#8217; (seemingly in violation of the usual adjective-before-noun 
+  word order used in English), we describe a resulting state of affairs.</p>
+<p align="justify" class="style27">Yet another type of word-order iconicity is displayed in comparing 
+  the following two sentences.</p>
+<blockquote class="style27">
+  <p align="justify">5) <em>Loretta gave Sue a wedding gift.</em><br />
+    6) <em>Loretta gave a wedding gift to Sue.</em></p>
+</blockquote>
+<p align="justify" class="style27">Most grammar textbooks would state that these two sentences 
+  are semantically equivalent, the first employing a &#8220;ditransitive&#8221; 
+  pattern (i.e., juxtaposing an indirect object &#8216;Sue&#8217; with a direct 
+  object &#8216;wedding gift&#8217;), while the second uses a &#8220;complement&#8221; 
+  pattern in which the indirect object follows the direct object and is changed 
+  to a prepositional phrase using &#8216;to.&#8217; However, there is a subtle 
+  semantic distinction between the two sentences. The first strongly implies that 
+  the wedding gift is for Sue, i.e., Sue is the bride and intended recipient. 
+  The second sentence, however, invites the possibility that Sue is only a temporary 
+  or circumstantial goal for the act of giving, but not the bride and intended 
+  recipient. For example, if Sue is merely a guest at the wedding and Loretta 
+  needed Sue&#8217;s help carrying an armload of wedding gifts, she might give 
+  a wedding gift <em>to Sue</em>, but that does not mean she would <em>give Sue</em> a wedding gift. This type of iconicity distinguishing a recipient from a directional 
+  goal is an example of what is termed &#8220;distance iconicity,&#8221; because 
+  the two linked words are made more &#8220;distant&#8221; from each other in 
+  the sentence as a reflection of their more circumstantial association.</p>
+<p align="justify" class="style27">Ithkuil does not display iconicity. While the order of words 
+  in an Ithkuil phrase or sentence may coincidentally reflect a temporal or causative 
+  sequence of events, this is not by syntactic design. Because of the myriad means 
+  available in Ithkuil to morphologically distinguish sequence, cause-and-effect, 
+  resulting states, and the distinction of recipients from directional goals, 
+  no iconicity patterns are required.</p>
+<p align="justify" class="style27">For example, we saw in sentences (1) and (2) above how English 
+  &#8216;and&#8217; can be used to convey not just mere coordination, but also 
+  a sequencing function. In <a href="07_suffixes.html#Sec7o4o3">Sections 
+    7.4.3</a> and <a href="07_suffixes.html#Sec7o4o4">7.4.4</a>, we saw 
+  that Ithkuil has no less than thirty-six suffixes (four suffix categories, each 
+  with nine different degrees) which convey various coordinative and sequencing 
+  patterns with great specificity. Thus, Ithkuil has no morpheme directly equivalent 
+  to the ambiguous English word &#8216;and.&#8217; There is an affix corresponding 
+  to &#8216;and&#8217; in its use as a mere additive listing device (e.g., &#8216;pears 
+  and apples and bananas&#8217;), another corresponding to its use as an indicator 
+  of simultaneity (e.g., <em>I clenched my fists and scowled</em>), another 
+  corresponding to its use as an indicator of additional information (e.g., <em>The 
+  clown likes children and loves to eat</em>), another to its use as an indicator 
+  of parallel description or activity (e.g., <em>We went dancing and so did 
+  they</em>), and yet another as a temporal sequencing indicator (e.g., <em>I 
+went to the window and looked out</em>).</p>
+<p align="justify" class="style27">&nbsp;</p>
+<p align="justify" class="style27"><br />
+</p>
+<p align="justify" class="style27"><strong><a name="Sec9o2" id="Sec9o2"></a></strong></p>
+<table width="100%" height="23" border="0" cellpadding="0" bgcolor="#CCCCCC">
+  <tr>
+    <td height="19" class="style27"><div><strong>9.2 MORPHO-SEMANTIC CONSIDERATIONS</strong></div></td>
+  </tr>
+</table>
+<p align="justify" class="style27">It should be noted that when structuring an Ithkuil sentence, 
+  particularly when translating from other languages such as English, care must 
+  be given to avoid capturing irrelevant semantic information reflected by the 
+  morphology of the source language and trying to find an equivalent or parallel 
+  way to reflect those irrelevancies in the Ithkuil sentence. This can have a 
+  profound effect on the morpho-syntactical structure of the resulting Ithkuil 
+  sentence.</p>
+<p align="justify" class="style27">&nbsp;</p>
+<h3 align="justify" class="style27">9.2.1 Arbitrary Delineations of Perspective or Point of View</h3>
+<p align="justify" class="style27">One area where word-choice in English and other Western languages 
+  arbitrarily affects sentence structure is in the unintentional schematicization 
+  of a particular perspective or point of view. For example, consider the following 
+  pair of sentences in English.</p>
+<blockquote class="style27">
+  <p align="justify">1) <em>The path climbs steeply out of the canyon.</em><br />
+    2) <em>The path descends steeply into the canyon.</em></p>
+</blockquote>
+<p align="justify" class="style27">Both of these sentences are describing the same property of 
+  the path &#8212; its steepness. The distinction in the sentences comes from 
+  the point of view being reflected by the speaker. In sentence (1) the implied 
+  point of view is from the bottom of the canyon upward, while in sentence (2) 
+  the viewpoint is from the top of the canyon downward. What is important is that, 
+  semantically, the point of view is of no relevance to the steepness of the path <em>per se</em>. So if the cognitive intent of the utterance is simply to describe 
+  the vertical gradient of the path within the canyon, there would be only one 
+  Ithkuil translation for both of these sentences, eschewing the point of view 
+  entirely and restating the sentence to read: </p>
+<blockquote class="style27">
+  <p align="justify"><img src="/images/3-5-2c.jpg" width="141" height="47" /><br />
+    <strong>&Ucirc;b &nbsp;eikkradwa &nbsp;smou&#8217;ol&acirc;xh.</strong><br />
+    <span class="style30">EXN<sub>1</sub>/6 <strong> &nbsp;</strong><strong><strong>&nbsp;</strong>&nbsp;</strong> DYN-&lsquo;move.along.obliquely.vertical.path.between.two.points&rsquo;-RPV/PRX/N/CSL/UNI-IFL<strong> &nbsp;</strong><strong> </strong> <strong> <strong> &nbsp;</strong>&nbsp;</strong> STA-&lsquo;valley&rsquo;-NAV-NRM/DEL/M/CSL/UNI-SCO<sub>2</sub>/5</span>-<span class="style30">IFL</span><br />
+    <em>The path through the canyon is steep.</em> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="style29"><a href="sound_files/3-5-2c.mp3" target="_blank">LISTEN</a></span>&nbsp;<a href="sound_files/3-5-2c.mp3" target="_blank"><img src="/images/Audio_icon.gif" width="19" height="16" border="0" align="absmiddle" /></a></p>
+</blockquote>
+<p align="justify" class="style27">&nbsp;</p>
+<h3 align="justify" class="style27">9.2.2 Masking of Semantic or Participatory Roles</h3>
+<p align="justify" class="style27">Similarly, care must be made, when comparing Ithkuil sentence 
+  structure with other languages, to note that Ithkuil grammar allows for a more 
+  overt reflection of the underlying semantic roles inherent in a given sentence. 
+  As a result, sentence structures in Western languages which &#8220;mask&#8221; 
+  potentially anomalous semantic structures are avoided in Ithkuil. For example, 
+  compare the following pairs of sentences.</p>
+<div align="justify" class="style27">
+  <table width="88%" border="0" cellpadding="0">
+    <tr>
+      <td width="4%">&nbsp;</td>
+      <td width="50%">3a) <em>He supplied a report to the analyst.</em></td>
+      <td width="46%">4a) <em>She applied a solvent to the stain.</em></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>3b) <em>He supplied the analyst a report.</em></td>
+      <td>4b) <em>*She applied the stain a solvent.</em></td>
+    </tr>
+  </table>
+</div>
+<p align="justify" class="style27">The syntactical patterns of these two pairs of sentences are 
+  identical, yet the word-order in sentence (4b) is ungrammatical (as indicated 
+  by the asterisk), while the same word-order in sentence (3b) presents no problem. 
+  The underlying reason for the difference is one of semantic role. While &#8216;analysts&#8217; 
+  can function in the role of Recipients, &#8216;stains&#8217; cannot (they are 
+  merely directional Goals, i.e., where the solvent gets applied). Cognitively, 
+  stains cannot &#8220;possess&#8221; a solvent the way analysts can &#8220;possess&#8221; 
+  a report. In Ithkuil, the semantic roles would be clearly defined by the case-markings 
+  of the participants. Therefore, syntactically inconsistent pairs such as (3b) 
+  and (4b) do not occur.</p>
+<p align="justify" class="style27">Sometimes, rather than semantic role, it is a participant&#8217;s 
+  relationship to an underlying clause that presents the problem. For example, <em>He&#8217;s a tall president</em> means &#8216;He&#8217;s a president who 
+  is tall.&#8217; So why doesn&#8217;t <em>He&#8217;s a likely president</em> mean &#8216;*He&#8217;s a president who is likely&#8217;? The reason is that, 
+  while &#8216;tall&#8217; describes its adjacent referent &#8216;president,&#8217; 
+  &#8216;likely&#8217; does not describe its adjacent referent. Rather, &#8216;likely&#8217; 
+  describes an underlying process in which that referent is or will be engaged, 
+  i.e., &#8216;running for president.&#8217; Therefore, while these two sentences 
+  are morpho-syntactically identical in English, their Ithkuil translations are 
+  quite different from one another morpho-syntactically: <br />
+</p>
+<blockquote class="style27">
+  <p>&nbsp;</p>
+  <p><strong><img src="/images/9-2-2a.jpg" width="186" height="44" /><br />
+    Qi &nbsp;alka&#355;eins&nbsp; e&aacute;drai&rsquo;seumi.</strong><br />
+    <span class="style30">ma-AFF&nbsp;&nbsp;&nbsp;&nbsp; STA-&lsquo;height&rsquo;-NRM/DEL/N/CSL/UNI-PTT<sub>2</sub>/6-IFL&nbsp;&nbsp;&nbsp;&nbsp; MNF-FRAMED/FML-&lsquo;preside/govern&rsquo;-COR-NRM/PRX/M/CSL/UNI-ROL<sub>2</sub>/4-FNC</span><br />
+    <em>He&rsquo;s a tall president.</em><br />
+  [literally: <em>There is much height to him who formally presides</em>.] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="style29"><a href="sound_files/9-2-2a.mp3" target="_blank">LISTEN</a></span>&nbsp;<a href="sound_files/9-2-2a.mp3" target="_blank"><img src="/images/Audio_icon.gif" width="19" height="16" border="0" align="absmiddle" /></a></p>
+  <p>&nbsp;</p>
+  <p><strong><img src="/images/9-2-2b.jpg" width="138" height="36" /><br />
+    Qa  &nbsp;   &nbsp;eadramt&ocirc;&ccedil;qeum&iacute;.</strong><br />
+    <span class="style30">ma-OBL&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MNF-&lsquo;preside/govern&rsquo;-NRM/ICP/M/CSL/UNI-PRB<sub>2</sub>/7-ROL<sub>2</sub>/4-FNC-</span><span class="style30">FML</span><br />
+    <em>He&rsquo;s a likely president.</em><br />
+  [literally: <em>He is one who probably will begin to formally preside</em>.]  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="style29"><a href="sound_files/9-2-2b.mp3" target="_blank">LISTEN</a></span>&nbsp;<a href="sound_files/9-2-2b.mp3" target="_blank"><img src="/images/Audio_icon.gif" width="19" height="16" border="0" align="absmiddle" /></a></p>
+  <p>&nbsp; </p>
+</blockquote>
+<h3 class="style27">9.2.3 Negation</h3>
+<p align="justify" class="style27">Negation is another morpho-semantic area where translation 
+  from English or other Western languages can be tricky. Consider the English 
+  sentence <em>Shelly doesn&#8217;t think they like her cooking</em>. Note this 
+  sentence does not mean what a literal word-for-word analysis implies, i.e., 
+  &#8216;That they like her cooking is not something that Shelly is thinking.&#8217; 
+  Rather, the correct meaning is &#8216;Shelly thinks that they don&#8217;t like 
+  her cooking.&#8217; Ithkuil is very precise in specifying exactly what components 
+  of a sentence are to be negated. Use of the four affirmation/negation affixes 
+  from <a href="07_suffixes.html#Sec7o4o9">Section 7.4.9</a>  in conjunction with a formative carries very specific information as to what 
+  morphological components of a sentence are being affirmed or negated and to 
+  what degree. Using these four affixes alone, Ithkuil can distinguish between 
+  the following four sentences without any syntactic rearrangement of the words:</p>
+<blockquote class="style27">
+  <p align="justify"><em>I don&#8217;t want to begin singing.</em></p>
+  <p align="justify"><em>I&#8217;m beginning to not want to sing.</em></p>
+  <p align="justify"><em>I want to not begin singing.</em></p>
+  <p align="justify"><em>I&#8217;m beginning to want to not sing.</em></p>
+</blockquote>
+<p align="justify" class="style27">Thus when translating negative sentences into Ithkuil, care 
+  must be taken to not syntactically &#8220;rearrange&#8221; a sentence as with <em>Shelly doesn&#8217;t think they like her cooking</em>. Additionally, Ithkuil 
+  makes a morpho-semantic distinction not found in Western languages: the difference 
+  between <strong>absolute negation</strong> and <strong>relative negation</strong>. 
+  Absolute negation implies that the non-existence or non-occurrence of an entity, 
+  state, or event is due to contextual inapplicability, while relative negation 
+  indicates that the non-existence or non-occurrence is circumstantial. This distinction 
+  is illustrated in the two sentences below:</p>
+<blockquote class="style27">
+  <p><br />
+    <img src="/images/9-2-3a.jpg" width="129" height="43" /><br />
+    <strong>Ilma&#355;&aacute;r<span class="style30"> &nbsp;</span>&ecirc;qeil.</strong><br />
+    <span class="style30">DYN-&#8216;sing&#8217;-NRM/DEL/N/CSL/UNI-<span class="style49">NA1<sub>1</sub>/5</span>-</span><span class="style30">FML&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;STA-&#8216;girl&#8217;-ACT-NRM/DEL/M/CSL/UNI-IFL</span><br />
+    <em>The woman doesn&#8217;t sing </em>[even though she can, i.e., she chooses 
+    not to].</p>
+  <p>&nbsp;</p>
+  <p><strong><img src="/images/9-2-3b.jpg" width="129" height="42" /><br />
+    Ilm&agrave;&#355;&icirc;r<span class="style30"> &nbsp;</span>&ecirc;qeil.</strong><br />
+    <span class="style30">DYN-&#8216;sing&#8217;-NRM/DEL/N/CSL/UNI-<span class="style49">NA1<sub>1<sub><sub></sub></sub></sub>/4</span>-</span><span class="style30">FML&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;STA-&#8216;girl&#8217;-ACT-NRM/DEL/M/CSL/UNI-IFL</span><br />
+    <em>The woman doesn&#8217;t sing</em> [because she can&#8217;t, i.e., she is 
+    mute].</p>
+</blockquote>
+<p class="style27">&nbsp;</p>
+<p class="style27"><a name="Sec9o3" id="Sec9o3"></a><br />
+</p>
+<table width="100%" border="0" cellpadding="0">
+  <tr>
+    <td bgcolor="#CCCCCC" class="style27"><div><strong>9.3 THE &#8220;CARRIER&#8221; 
+    ROOT</strong></div></td>
+  </tr>
+</table>
+<p align="justify" class="style27">Since the Ithkuil declensional and conjugational system is 
+  based on  multiple  patterns of vowel mutation, affixation, and shifts in tone and stress, proper 
+  nouns such as personal and place names, as well as non-Ithkuil words from other 
+  languages are by nature morpho-phonologically incompatible with such as system. 
+  Nevertheless, such words can be declined or conjugated like any other Ithkuil 
+  formative by means of the &#8220;carrier&#8221; root <font face="Arial, Helvetica, sans-serif"><strong>-p-</strong></font>. 
+  In addition to this use, the carrier root is employed in certain other contexts 
+  as well, as described below.</p>
+<h3 align="justify" class="style27"><br />
+  9.3.1 Words that Cannot Take Affixes or Be Mutated</h3>
+<p align="justify" class="style27">The three primary stems of the carrier root, <font face="Arial, Helvetica, sans-serif"><strong>(a)p-</strong></font><strong><font face="Arial, Helvetica, sans-serif">, <strong>ep-</strong></font>, <font face="Arial, Helvetica, sans-serif"><strong>up-</strong></font></strong>, are respectively associated with animate 
+  beings (the two complementary derivatives <font face="Arial, Helvetica, sans-serif"><strong>op-</strong></font> and <font face="Arial, Helvetica, sans-serif"><strong>&acirc;p-</strong></font> being humans versus non-humans or 
+  figuratively/metaphorically animate entities); inanimate entities (the two complementary 
+  derivatives <font face="Arial, Helvetica, sans-serif"><strong>&ouml;p-</strong></font> and <font face="Arial, Helvetica, sans-serif"><strong>&ecirc;p-</strong></font> being objectively concrete entities versus subjective entities such 
+  as thoughts, emotions, sensations, etc.); and finally intangible abstract referents 
+  (the two complementary derivatives <strong><font face="Arial, Helvetica, sans-serif"><strong> &icirc;p-/<strong><font face="Arial, Helvetica, sans-serif"><strong>&ucirc;p-</strong></font></strong> </strong></font></strong>and <strong><font face="Arial, Helvetica, sans-serif"><strong><strong><font face="Arial, Helvetica, sans-serif"><strong>&ocirc;p-</strong></font></strong></strong></font></strong> being place names and abstractions). The 
+  carrier stem is placed immediately before the proper noun or foreign word or 
+  phrase, then declined or conjugated normally for any desired morphological categories, 
+  even verbal categories. The proper noun or foreign word or phrase itself is 
+left unchanged. The non-Ithkuil word or phrase is pronounced with either high or rising tone on its last syllable, in order to clue the listener that the following syllable/word returns to being Ithkuil. For those rare instances where the non-Ithkuil word or phrase natively carries grammatical tone (e.g., properly pronounced Cantonese), the end of the phrase can be indicated by either a pause in speech or repetition of the carrier-stem following the phrase. (Note: this repeated carrier-stem would not be indicated in writing - see <a href="11_script.htm#Sec11o4">Sec. 11.4</a>.)</p>
+<p align="justify" class="style27"><br />
+</p>
+<h3 align="justify" class="style27"><br />
+9.3.2 Emphasizing or Highlighting a Particular Category</h3>
+<p align="justify" class="style27">Another use of the carrier root is to emphasize or topicalize 
+  a particular affix or grammatical element associated with a word. For example, 
+  in English we can say &#8216;a <em>big</em> house&#8217; with extra intonation 
+  on the word &#8216;big&#8217; to emphasize that word. To accomplish such emphasis 
+  in Ithkuil, the carrier root is used with the augmentative suffix in conjunction 
+  with the noun &#8216;house&#8217; as opposed to simply using the augmentative 
+  suffix on the stem for &#8216;house.&#8217; No change in vocal pitch or intonation 
+  is required, as the grammatically unnecessary use of the carrier root serves 
+  to accomplish the required emphasis. Any morphological category manifested by 
+  a carrier root rather than an adjunct or mutation serves to emphasize that category. 
+  (It should be noted that the use of optional combination and euphonic adjuncts 
+  do not accomplish such emphasis. Their use versus non-use imparts no difference 
+  in emphasis for the particular morphological categories contained in the adjunct.) <br />
+</p>
+<h3 align="justify" class="style27"><br />
+9.3.3 Titles of Address</h3>
+<p align="justify" class="style27">It should be noted that the use of the carrier root in front 
+  of the names of persons serves to function as a title of address corresponding 
+  to English <em>Mister</em>, Ms. or <em>Miss</em>. There is no distinction of 
+  gender or marital status conveyed by the term. </p>
+<p align="justify" class="style27">&nbsp;</p>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+    
+  </body>
+</html>

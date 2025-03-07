@@ -1,0 +1,1974 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="http://localhost/10/">
+      
+      
+        <link rel="prev" href="../9/">
+      
+      
+        <link rel="next" href="../11/">
+      
+      
+      <link rel="icon" href="../icob.svg">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.7">
+    
+    
+      
+        <title>10 Lexicosemantics - Ithdocs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.8608ea7d.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../style.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="red" data-md-color-accent="red">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Ithdocs" class="md-header__button md-logo" aria-label="Ithdocs" data-md-component="logo">
+      
+  <img src="../ico.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Ithdocs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              10 Lexicosemantics
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Ithdocs" class="md-nav__button md-logo" aria-label="Ithdocs" data-md-component="logo">
+      
+  <img src="../ico.svg" alt="logo">
+
+    </a>
+    Ithdocs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Intro
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1 Phonology
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2 Morphophonology
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3 Basic Morphology
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    4 Cases
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    5 Verbs
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../6/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    6 More Verbs
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../7/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    7 Suffixes
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../8/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    8 Adjuncts
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../9/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    9 Syntax
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    10 Lexicosemantics
+    
+  </span>
+  
+
+      </a>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../11/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    11 Script
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../12/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    12 Numbers
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lexicon/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lexicon
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../abbr/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Abbreviations
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_16" >
+        
+          
+          <label class="md-nav__link" for="__nav_16" id="__nav_16_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Appendix
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_16_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_16">
+            <span class="md-nav__icon md-icon"></span>
+            Appendix
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../update/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Updates
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../supp/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Supplemental Lexicon
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../addsuff.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Additional Suffixes
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../errata/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Errata
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>10 Lexicosemantics</h1>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>A Grammar of the Ithkuil Language - Chapter 10: Lexico-Semantics</title>
+<style type="text/css">
+<!--
+.style2 {   font-family: Georgia, "Times New Roman", Times, serif;
+    font-weight: bold;
+    color: #999999;
+}
+.style3 {font-family: Arial, Helvetica, sans-serif; font-weight: bold; font-size: small; color: #0000FF; }
+.style7 {   font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.style8 {color: #FF0000}
+.style9 {
+    font-size: large;
+    font-weight: bold;
+}
+.style10 {font-size: large}
+.style11 {font-weight: bold; font-size: small; font-family: Arial, Helvetica, sans-serif;}
+.style12 {font-family: Arial, Helvetica, sans-serif}
+.style13 {font-size: small}
+.style14 {font-family: Arial, Helvetica, sans-serif; font-size: small; }
+.style32 {font-size: x-small}
+.style34 {font-family: Geneva, Arial, Helvetica, sans-serif; font-size: small; }
+.style36 {
+    font-size: large;
+    font-family: Geneva, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.style40 {color: #FF0000; font-weight: bold; }
+.style46 {  font-family: Geneva, Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+}
+.style47 {font-weight: bold; font-family: Geneva, Arial, Helvetica, sans-serif;}
+-->
+</style>
+</head>
+
+<body>
+
+<p class="style10"><br />
+  The term <strong>lexico-semantics</strong> refers to the relationship 
+  between the lexicon of a language (i.e., its root-words and word-stems) and 
+  the various possible semantic categories created by the human mind. Every language 
+  (and particularly every language family) divides the world up differently in 
+  terms of what sorts of concepts are made into words and how the meanings of 
+  those words reflect the reality around us. In other words, the lexico-semantics 
+  of a language answers the questions <em>what semantic concepts does this language 
+    psycho-linguistically categorize into autonomous words and how are each of these 
+categories internally organized?</em></p>
+<p align="justify" class="style10">Lexico-semantics is extremely important in Ithkuil for two 
+  related reasons:</p>
+<p align="justify" class="style10">1) Ithkuil morpho-phonology only allows for 3600 possible root 
+  words, as explained in Chapter 2. This means that the concepts chosen to be 
+  conveyed by these roots must be carefully selected to insure the widest range 
+  of conceptualization possible within such a limited framework.</p>
+<p align="justify" class="style10">2) We have seen throughout this work how Ithkuil&#8217;s matrix-like 
+  grammatical structure allows for an incredible amount of synergy in terms of 
+  morphological word-derivation, generating wholly new, emergent concepts from 
+  word-roots, not simply mere conjugations, declensions, and transparent derivations. 
+  In order to ensure the maximum amount of dynamism in deriving new concepts morphologically 
+  from existing word-roots, it is important that those initial roots be carefully 
+  selected in terms of meaning.</p>
+<p align="justify" class="style10">In this chapter, we will examine the many considerations that 
+  go in to the assigning of concepts to those 3600 roots, in order to optimally 
+  accomplish what has been demonstrated throughout this work: using the dynamics 
+  of Ithkuil morphology to eliminate the need for the hundred thousand or more 
+  autonomous word roots of natural languages, or to put it colloquially, &#8220;getting 
+  the most lexico-semantic bang for the morpho-phonological buck.&#8221; </p>
+<p align="justify" class="style10">We will start first with a review of key components in the 
+  systemic design of Ithkuil morphology. This will be followed by sections on 
+  those areas of Ithkuil lexico-semantics which are most profoundly distinct from 
+  Western languages. </p>
+<p align="justify" class="style10">The last section deals with comparison to Western categorizations, 
+  examining how Ithkuil lexico-semantics reinterprets certain concepts considered 
+  &#8220;fundamental&#8221; in English and other Western languages.</p>
+<p align="justify" class="style10">&nbsp;</p>
+<h3 align="justify" class="style10">Note on Ithkuil's Implicit &#8220;Theory of Meaning&#8221;</h3>
+<p align="justify" class="style10">For those readers who may be trained in linguistics, particulary cognitive linguistics, it should be noted that at this point in the author&#8217;s development of the language, a traditional Enlightenment-based theory of meaning, assuming a one-to-one correspondence between a lexeme and its external &#8220;in-the-world&#8221; referent, has been implicitly assumed for convenience and/or expediency&#8217;s sake. A more careful and rigourous construction for Ithkuil&#8217;s lexico-semantics, given the author&#8217;s stated design goals (as described in the Introduction section), would not assume such a theory of meaning, but would rather incorporate more recent findings of cognitive science and cognitive linguistics to reflect embodied meaning and metaphor-based conceptualization. However, pursuing such a foundation for the lexico-semantics of the language would, in the author&#8217;s opinion, be extremely time-consuming (on the order of many additional years, perhaps decades, to construct). Rather than withdraw the language from public availability for such reasons, the author has chosen instead to adopt a traditional/formalist foundation for its lexico-semantics essentially out of convenience, in order to be able to showcase the language's morphology. </p>
+<p>&nbsp;</p>
+<p><font size="4"><strong><a name="Sec10o1" id="Sec10o1"></a></strong></font></p>
+<table width="99%" border="0" cellpadding="0" bgcolor="#CCCCCC">
+  <tr>
+    <td><div><font size="4"><strong>10.1 SYSTEMATIC MORPHOLOGICAL DERIVATION</strong></font></div></td>
+  </tr>
+</table>
+<p align="justify" class="style10">Ithkuil systematically uses its myriad of morphological categories 
+  to derive secondary concepts from more basic concepts, often eliminating the 
+  need for separate lexicalization, i.e., eliminating the need to create separate 
+  word-roots for new but related concepts as is so often the case in Western languages. 
+  We will explore this system of morphological derivation more closely, particularly 
+  in regard to its universality across the spectrum of Ithkuil word-roots.</p>
+<h3 align="justify" class="style10"><a name="Sec10o1o1" id="Sec10o1o1"></a><br />
+  10.1.1 Stem Derivation from Roots</h3>
+<p align="justify" class="style10">We have already seen many applied examples of the above-described 
+  concepts, particularly in <a href="02_morpho-phonology.html#Sec2o3">Section 
+    2.3</a> et seq. regarding the use of the three different <strong>Vr</strong> vowel patterns to derive a trinary array of interrelated stems from a root, as well as shifting the Vr vowel  of those trinary stems to in turn derive two separate arrays 
+  of complementary stems from the initial holistic array of stems. Through this 
+  system of vowel shifts, we saw how a single root generates no 
+  less than eighteen formative stems, each functioning as a noun or verb. This 
+  is illustrated below using the example root <strong><strong>-</strong>k-</strong>&#8216;TRANSLATIVE MOTION&#8217;. </p>
+<br />
+<table border="1" align="center" cellpadding="3" cellspacing="0">
+  <tr>
+    <td width="638" height="29" colspan="4"><div align="center">
+      <p><strong>-</strong><strong>K- </strong>&#8216;<font size="2">TRANSLATIVE MOTION</font>&#8217;</p>
+      </div></td>
+  </tr>
+  <tr>
+    <td width="319" height="34" colspan="2"><div align="center" class="style12"><span class="style13">INFORMAL</span> Designation</div></td>
+    <td width="319" colspan="2"><div align="center" class="style12"><span class="style13">FORMAL</span> Designation</div></td>
+  </tr>
+  <tr>
+    <td width="319" height="53" colspan="2" valign="top"><blockquote>
+      <div>1. <strong>ak</strong>- <span class="style14">move/motion    from one place to another</span></div>
+    </blockquote></td>
+    <td width="319" colspan="2" valign="top"><blockquote>
+      <div>1. <strong>ak&aacute;</strong>- <span class="style14">travel/traverse;    journey</span></div>
+    </blockquote></td>
+  </tr>
+  <tr>
+    <td width="319" height="54" colspan="2" valign="top"><blockquote>
+      <div>2. <strong>ek</strong>- <span class="style14">set in motion/self-directed    movement from one place to another</span></div>
+    </blockquote></td>
+    <td width="319" colspan="2" valign="top"><blockquote>
+      <div>2. <strong>ek&aacute;</strong>- <span class="style14">set    off for/journey to/directed travel toward</span></div>
+    </blockquote></td>
+  </tr>
+  <tr>
+    <td width="319" height="70" colspan="2" valign="top"><blockquote>
+      <div>3. <strong>uk</strong>- <span class="style14">move/movement between one    place and another (i.e., along line between two points)</span><br />
+        <br />
+      </div>
+    </blockquote></td>
+    <td width="319" colspan="2" valign="top"><blockquote>
+      <div>3. <strong>uk&aacute;</strong>- <span class="style14">travel/journey along way    between two places</span></div>
+    </blockquote></td>
+  </tr>
+  <tr>
+    <td width="319" height="32" colspan="2"><div align="center" class="style12">COMPLEMENTARY STEMS</div></td>
+    <td width="319" colspan="2"><div align="center" class="style12">COMPLEMENTARY STEMS</div></td>
+  </tr>
+  <tr>
+    <td width="160" height="60" valign="top"><div>1. <strong>ok</strong>-<span class="style14"> go    = movement outward/away</span><br />
+    </div></td>
+    <td width="160" valign="top"><div>1. <strong>&acirc;k</strong>- <span class="style14">come    = movement inward/toward</span></div></td>
+    <td width="160" valign="top"><div>1. <strong>ok&aacute;</strong>- <span class="style14">go traveling,    be off</span></div></td>
+    <td width="160" valign="top"><div>1. <strong>&acirc;k&aacute;</strong>- j<span class="style14">ourney    to(ward)</span></div></td>
+  </tr>
+  <tr>
+    <td width="160" height="87" valign="top"><div>2. <strong>&ouml;k</strong>- <span class="style14">go    away/move away = increase distance from a starting point</span></div></td>
+    <td width="160" valign="top"><div>2. <strong>&ecirc;k</strong>- <span class="style14">come    toward/to close the distance = decrease distance toward endpoint</span></div></td>
+    <td width="160" valign="top"><div>2. <strong>&ouml;k&aacute;</strong>- <span class="style14">travel/journey    further away from starting point</span></div></td>
+    <td width="160" valign="top"><div>2. <strong>&ecirc;k&aacute;</strong>- <span class="style14">reach    vicinity of, close in on destination</span></div></td>
+  </tr>
+  <tr>
+    <td width="160" valign="top"><div>3. <strong>&icirc;k/&ucirc;k-</strong><span class="style14"> leave/depart = move away from    one point towards another</span></div></td>
+    <td width="160" valign="top"><div>3. <strong>&ocirc;k</strong>- <span class="style14">approach = approach one point    from direction of another</span></div></td>
+    <td width="160" valign="top"><div>3. <strong>&icirc;k&aacute;/&ucirc;k&aacute;</strong>- <span class="style14">depart/departure    from starting point on journey toward elsewhere</span></div></td>
+    <td width="160" valign="top"><div>3. <strong>&ocirc;k&aacute;</strong>- <span class="style14">arrive/arrival,    reach destination </span></div></td>
+  </tr>
+</table>
+<p align="justify"><br />
+  <span class="style10">As described in <a href="02_morpho-phonology.html">Chapter 2</a>, this hierarchical pattern of stem 
+  derivation and division into complementary stems from a more basic or underlying 
+  &#8220;holistic&#8221; stem allows for significant collapsing in the number 
+  of word-roots necessary compared to Western languages, as words that are semantically 
+  interrelated in a hierarchical or complementary fashion can be derived morphologically 
+  from a basic root, as opposed to being assigned separate word-roots as in other 
+  languages. The above root -<strong>k</strong>- demonstrates how concepts such <em>come</em> versus <em>go</em> are expressed as complementary derivations of a single underlying concept TRANSLATIVE 
+    MOTION. All such complementary stems based on participant perspective 
+are similarly patterned, e.g., <em>lead/follow, buy/sell, give/take</em>, etc.</span></p>
+<p align="justify" class="style10">Additionally, this hierarchical structure of stem derivation 
+  from a single root using vocalic infixes allows for the creation of &#8220;built-in&#8221; 
+  classification schemes and taxonomies for concepts which require them. Biological 
+  taxonomies, for example, can be easily accommodated under this scheme, first 
+  dividing the two Forms (Designations) of the root into the animal itself versus 
+  the animal as a resource, the holistic stems indicating first the generic species 
+  then male versus female. The complementary stems then make the further distinction 
+  between wild versus domesticated for the informal stem and between food/prey 
+  and derived or processed products for the formal stem. </p>
+<p align="justify" class="style10">Using the nine degrees of the Stem 
+  Specific Derivative <a href="07_suffixes.html#SSDsuffix"><span class="style12"><strong>SSD</strong></span> </a>suffix <font face="Arial, Helvetica, sans-serif"><strong>-k</strong></font> from Section 7.4.13 on such a root, we can extend this scheme to denote specific 
+  parts, products or derived resources such as the milk, oil, meat, skin or 
+  hide, tail, tusk or horn, hair or fur (e.g., wool), etc. The Degree 
+    of Maturity <a href="07_suffixes.html#MATsuffix"><span class="style12"><strong>MAT</strong></span>  </a>suffix <font face="Arial, Helvetica, sans-serif"><strong>-p<sup>h</sup></strong></font> from Section 7.4.10 is also applied to indicate the developmental stage of the 
+animal, providing derived equivalents 
+  to words such as <em>foal</em>, <em>fawn, lamb</em> or <em>cub</em>, from <em>horse, 
+deer, goat,</em> or <em>lion</em>.</p>
+<p><br />
+</p>
+<p><a name="Sec10o1o2" id="Sec10o1o2"></a></p>
+<h3>10.1.2 The Use of Derivational Suffixes</h3>
+<p align="justify" class="style10">In Chapter 7, we saw how many of the approximately 200 suffix categories 
+  can be used to generate both derivative concepts  as 
+  well as amalgamated gestalts carrying a new holistic meaning. As an example, 
+  here are only ten of the various new concepts which can be derived through affixes 
+  from the stem <span class="style10"><strong>el</strong></span>- &#8216;say something [i.e., 
+  communicate a verbal message]&#8217;:</p>
+<table width="81%" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="158" height="31"><blockquote class="style9">
+    elalaiq&#8217;</blockquote></td>
+    <td width="258"><div><em>&lsquo;share a secret&rsquo;</em></div></td>
+    <td width="349"><div class="style12">suffix = <a href="07_suffixes.html#DSRsuffix">DSR</a><span class="style32">2</span>/8</div></td>
+  </tr>
+  <tr>
+    <td width="158" height="31"><blockquote class="style9">
+      elal&ecirc;p&#355;</blockquote></td>
+    <td width="258"><div><em>&lsquo;news&rsquo;</em></div></td>
+    <td width="349"><div class="style12">suffix = <a href="07_suffixes.html#ATCsuffix">ATC</a><span class="style32">2</span>/3</div></td>
+  </tr>
+  <tr>
+    <td width="158" height="32"><blockquote class="style9">
+    elal&acirc;xh</blockquote></td>
+    <td width="258"><div><em>&lsquo;quip&rsquo;</em></div></td>
+    <td width="349"><div class="style12">suffix = <a href="07_suffixes.html#SCOsuffix">SCO</a><span class="style32">2</span>/5</div></td>
+  </tr>
+  <tr>
+    <td width="158" height="32"><blockquote class="style9">
+      elaluiq</blockquote></td>
+    <td width="258"><div><em>&lsquo;praise, adulation&rsquo;</em></div></td>
+    <td width="349"><div class="style12">suffix = <a href="07_suffixes.html#NTRsuffix">NTR</a><span class="style32">2</span>/9</div></td>
+  </tr>
+  <tr>
+    <td width="158" height="32"><blockquote class="style9">
+    elal&ocirc;pt</blockquote></td>
+    <td width="258"><div><em>&lsquo;lie&rsquo; [= tell a lie]</em></div></td>
+    <td width="349"><div class="style12">suffix = <a href="07_suffixes.html#REAsuffix">REA</a><span class="style32">2</span>/7</div></td>
+  </tr>
+  <tr>
+    <td width="158" height="32"><blockquote class="style9">
+    elalain&#355;</blockquote></td>
+    <td width="258"><div><em>&lsquo;shout out a message&rsquo;</em></div></td>
+    <td width="349"><div class="style12">suffix = <a href="07_suffixes.html#STRsuffix">STR</a><span class="style32">2</span>/8</div></td>
+  </tr>
+  <tr>
+    <td width="158" height="32"><blockquote class="style9">
+      elal&ecirc;n</blockquote></td>
+    <td width="258"><div><em>&lsquo;persuasive person, a persuader&rsquo;</em></div></td>
+    <td width="349"><div class="style12">suffix = <a href="07_suffixes.html#Sec7o4o12">AGC<span class="style32">2</span></a>/3</div></td>
+  </tr>
+  <tr>
+    <td width="158" height="33"><blockquote class="style9">
+      elal&ocirc;n</blockquote></td>
+    <td width="258"><div><em>&lsquo;liaison, a go-between&rsquo;</em></div></td>
+    <td width="349"><div class="style12">suffix = <a href="07_suffixes.html#Sec7o4o12">AGC</a><span class="style32">2</span>/7</div></td>
+  </tr>
+  <tr>
+    <td height="34"><blockquote class="style9"> elaliu&ccedil;auk&ccedil;</blockquote></td>
+    <td><div><em>&lsquo;whisper sweet nothings&rsquo;</em></div></td>
+    <td><div class="style12">suffixes = <a href="07_suffixes.html#AFTsuffix">AFT</a><span class="style32">2</span>/1 + <a href="07_suffixes.html#FRCsuffix">FRC</a><span class="style32">2</span>/2</div></td>
+  </tr>
+  <tr>
+    <td width="158" height="34"><blockquote class="style9">elaliuc&ecirc;ps</blockquote></td>
+    <td width="258"><div><em>&lsquo;cuss, curse&rsquo;</em></div></td>
+    <td width="349"><div class="style12">suffixes = <a href="07_suffixes.html#UNQsuffix">UNQ</a> <span class="style32">2</span>/1 + <a href="07_suffixes.html#MTAsuffix">MTA</a> <span class="style32">2</span>/3</div></td>
+  </tr>
+</table>
+<p align="justify"><br />
+    <span class="style10">Similarly the use of the Consent <span class="style7"><a href="07_suffixes.html#CNSsuffix">CNS</a></span> suffix, the Reason <span class="style7"><a href="07_suffixes.html#RSNsuffix">RSN</a></span> suffix, the Expectation <span class="style7"><a href="07_suffixes.html#XPTsuffix">XPT</a></span> suffix, the Deliberateness <span class="style7"><a href="07_suffixes.html#DLBsuffix">DLB</a></span> suffix, the Enablement <span class="style7"><a href="07_suffixes.html#ENBsuffix">ENB</a></span> suffix, the Agency/Intent <span class="style7"><a href="07_suffixes.html#AGNsuffix">AGN</a></span> suffix, and the Impact <span class="style7"><a href="07_suffixes.html#IMPsuffix">IMP</a></span> suffix from <a href="07_suffixes.html#Sec7o4o12">Section 
+    7.4.12</a> in conjunction w/ Transrelative cases (<a href="04_case.html#Sec4o3">Sec. 
+    4.3</a>), provides a means for describing extremely subtle scenarios of causation, 
+  willingness, enablement, hindrance, etc. which other languages can only capture 
+  via long-winded paraphrase. Employing this array of affixes and cases, a sentence 
+  such as <em>The singer stopped the boys from playing around</em> can be translated 
+  into Ithkuil in many syntactically equivalent (but morphologically distinct) 
+  ways to indicate whether the singer used physical force or persuasion to stop 
+  the boys, whether she stopped them via an indirect enabling means (such as turning 
+  out the lights), or whether it was the boys themselves who stopped upon hearing 
+  her voice or seeing her beauty, or even by her mere presence interrupting them 
+  (such as walking in on them inadvertently), as well as the degree of willingness 
+  or consent with which they stopped. The following example sentence further illustrates 
+the complex detail which these suffixes make possible:</span></p>
+<blockquote>
+  <p><span class="style9"><img src="/images/10-1-2a.jpg" width="300" height="42" /><br />
+    &Ocirc;q&ouml;l&ouml;&#328;tausp&ucirc;ls &nbsp;&ecirc;&#316;nel&ocirc;zra &nbsp;ia&ccedil;taxhtiams&iacute;&#355;.</span><br />
+    <span class="style14">STA</span><span class="style12">-&lsquo;</span>man<span class="style12">&rsquo;-</span><span class="style13"><span class="style12">EFF-NRM/DEL/M/CSL/UNI-<span class="style14"><span class="style8"><strong>XPT<span class="style32">1</span>/2-</strong></span></span><span class="style8"><strong>DLB<span class="style32">2</span>/2</strong></span>-<span class="style8"><strong>ENB<span class="style32">1</span>/6</strong></span><span class="style14">-IFL</span>&nbsp;&nbsp; STA</span></span><span class="style12">-&lsquo;</span>bird<span class="style12">&rsquo;-</span><span class="style13"><span class="style12">ABS-NRM/DEL/M/CSL/UNI-<span class="style8"><strong>IMP<span class="style32">2</span>/7</strong></span>-IFL  &nbsp;&nbsp;<br />
+    DYN</span></span><span class="style12">-&lsquo;</span>room<span class="style12">&rsquo;-</span><span class="style13"><span class="style12">NRM/DEL/U/COA/CST-<span class="style8"><strong>AGN<span class="style32">2</span>/9-DEV<span class="style32">1</span>/1</strong></span></span></span>-<span class="style13"><span class="style12">FML</span></span><br />
+    <span class="style10"><em> Aided by the bird&#8217;s own stupidity, the man unexpectedly and accidentally 
+        killed it without even realizing he&#8217;d done so, by inadvertently letting 
+  it out of the house.<font color="#FFFFFF"><font face="Arial, Helvetica, sans-serif">_________</font></font></em><font color="#FFFFFF"><font face="Arial, Helvetica, sans-serif">_</font></font></span><span class="style10"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+</blockquote>
+<p align="justify"><br />
+  <span class="style10">The  <a href="07_suffixes.html#DEVsuffix">DEV</a> suffix from Sec. 7.4.9, 
+  in first degree, roughly corresponds to the reversive prefixes of English such 
+  as &#8216;un-,&#8217; &#8216;de-,&#8217; and &#8216;dis-&#8217; to indicate 
+  the undoing or opposite of a word. However, in Ithkuil this suffix is productive 
+  for all semantically applicable stems and operates in conjunction with Modality 
+   (<a href="06_verbs_2.html#Sec6o1">Section 6.1</a>) 
+  and the Modality suffixes from <a href="07_suffixes.html#Sec7o4o11">Section 7.4.11</a> to extend the system of modalities, as illustrated by the following:</span></p>
+<blockquote>
+  <p align="justify"><span class="style10"><em>promise to +</em><strong> DEV/1 </strong><em>= 
+    foreswear, vow never to<br />
+    can (know how to) + </em><strong> DEV/1 </strong><em> = be ignorant of<br />
+    decide to + </em><strong> DEV/1 </strong><em> = avoid<br />
+    offer to + </em><strong> DEV/1 </strong><em> = refuse to<br />
+    agree upon/to + </em><strong> DEV/1 </strong><em> = decline to/abstain from<br />
+    like to + </em><strong> DEV/1 </strong><em> = loathe<br />
+    fear to + </em><strong> DEV/1 </strong><em> = love to<br />
+    need to + </em><strong> DEV/1 </strong><em> = dispensable, unnecessary to, can dispense with</em></span></p>
+</blockquote>
+<h3 align="justify">&nbsp;</h3>
+<h3 align="justify">10.1.3 The Use of Configuration, Affiliation, and Context </h3>
+<p align="justify" class="style10">Each of these categories has means to generate amalgamate, 
+  holistic, or emergent concepts from a more basic underlying stem.</p>
+<p align="justify" class="style10"><strong>10.1.3.1 Configuration</strong>: In <a href="03_morphology.html#Sec3o1">Sec. 
+  3.1</a> we saw how applying each of the nine Configuration categories to a stem 
+  often generates forms based on amalgamation of sets which require complete relexification 
+  when translated into English. Examples are:</p>
+<blockquote class="style10">
+  <p align="justify"><em>bone </em><strong>&rarr;</strong><em> skeleton <br />
+  strut/girder </em><strong>&rarr;</strong><em> frame </em><strong>&rarr;</strong><em> framework <br />
+    component </em><strong>&rarr;</strong><em> structure </em><strong>&rarr;</strong><em> system <br />
+    ingredient </em><strong>&rarr;</strong><em> compound <br />
+    food </em><strong>&rarr;</strong><em> dish </em><strong>&rarr;</strong><em> meal <br />
+    tool </em><strong>&rarr;</strong><em> toolset <br />
+    do/perform </em><strong>&rarr;</strong><em> coordinate <br />
+    vehicle </em><strong>&rarr;</strong><em> convoy <br />
+    person </em><strong>&rarr; </strong><em>group </em><strong>&rarr;</strong><em> crowd </em><strong>&rarr;</strong><em> masses <br />
+    activity </em><strong>&rarr; </strong><em>process</em>.</p>
+</blockquote>
+<p align="justify" class="style10"><strong>10.1.3.2 Affiliation</strong>: In <a href="03_morphology.html#Sec3o2">Sec. 
+  3.2</a> we saw how the four Affiliations can generate new concepts based on 
+  delineations of purpose, benefit, or function. Examples include: </p>
+<blockquote class="style10">
+  <p align="justify"><em>group </em><strong>&rarr;</strong><em> team, <br />
+  grove </em><strong>&rarr;</strong><em> orchard<br />
+    assortment </em><strong>&rarr;</strong><em> collection </em><strong>&rarr;</strong><em> junk<br />
+    process </em><strong>&rarr;</strong><em> plan</em></p>
+</blockquote>
+<p align="justify" class="style10"><strong>10.1.3.3 Context</strong>: In <a href="03_morphology.html#Sec3o6o4">Sec. 
+  3.6.4</a> we encountered the AMALGAMATE context, which 
+  serves to identify a stem specifically as a gestalt entity, composed of objective 
+  and subjective/social elements or components which contribute to the overall 
+  nature of the stem. Depending on the stem to which it is applied, the use of 
+  the amalgamate can cause relexification in translating to English. Examples: </p>
+<blockquote>
+  <p align="justify" class="style10"><em>demeanor </em><strong>&rarr;</strong><em> personality<br />
+  craftsmanship </em><strong>&rarr;</strong><em> artistry<br />
+    career </em><strong>&rarr;</strong><em> livelihood<br />
+    (one&#8217;s) past </em><strong>&rarr;</strong><em> (one&#8217;s) 
+    life<br />
+    to look after/tend </em><strong>&rarr;</strong><em> nurture</em></p>
+</blockquote>
+<h3 align="justify">&nbsp;</h3>
+<h3 align="justify">10.1.4 The Use of Designation and Version</h3>
+<p align="justify" class="style10">In <a href="03_morphology.html#Sec3o7">Section 
+  3.7</a> on Designation as well as <a href="05_verbs_1.html#Sec5o8">Section 
+    5.8</a> on Version, we saw how both of these morphological categories create 
+  distinctions in word-stems which usually require relexification in translation. 
+  The following word pairs illustrate such relexification:</p>
+<span class="style10"><br />
+</span>
+<table width="65%" border="0" align="center" cellpadding="1" cellspacing="1">
+  <tr>
+    <td width="50%" class="style10"><em>(the) past </em><strong>&rarr;</strong><em> history</em></td>
+    <td width="50%" class="style10"><em>see </em><strong>&rarr;</strong><em> observe</em></td>
+  </tr>
+  <tr>
+    <td class="style10"><em>writings </em><strong>&rarr;</strong><em> literature</em></td>
+    <td class="style10"><em>one </em><strong>&rarr;</strong><em> single/singular</em></td>
+  </tr>
+  <tr>
+    <td class="style10"><em>wordplay </em><strong>&rarr;</strong><em> rhetoric</em></td>
+    <td class="style10"><em>hear </em><strong>&rarr;</strong><em> listen</em></td>
+  </tr>
+  <tr>
+    <td class="style10"><em>behavior </em><strong>&rarr;</strong><em> demeanor</em></td>
+    <td class="style10"><em>desire </em><strong>&rarr;</strong><em> request</em></td>
+  </tr>
+  <tr>
+    <td class="style10"><em>wander </em><strong>&rarr;</strong><em> travel</em></td>
+    <td class="style10"><em>query </em><strong>&rarr;</strong><em> research</em></td>
+  </tr>
+  <tr>
+    <td class="style10"><em>eat </em><strong>&rarr;</strong><em> dine</em></td>
+    <td class="style10"><em>ponder </em><strong>&rarr;</strong><em> analyze</em></td>
+  </tr>
+  <tr>
+    <td class="style10"><em>containment </em><strong>&rarr;</strong><em> storage</em></td>
+    <td class="style10"><em>path </em><strong>&rarr;</strong><em> route</em></td>
+  </tr>
+</table>
+<p align="justify" class="style10"><br />
+  Again we see that application of morphological categories 
+  to word-stems serves to generate forms which substitute for lexical distinctions 
+in other languages, thus helping to reduce the size of the Ithkuil lexicon.</p>
+<p>&nbsp;</p>
+<h3 align="justify">10.1.5 The Use of Phase and Extension</h3>
+<p align="justify" class="style10">The use of the nine Phases, as explained in <a href="05_verbs_1.html#Sec5o5">Sec. 
+  5.5</a>, used in conjunction with the category of Extension (<a href="03_morphology.html#Sec3o4">Sec. 
+    3.4</a>) gives rise to an elaborate means by which to describe phenomena in 
+  terms of duration, periodicity, repetition, iterativity, and cyclic phenomena. 
+  When used in conjunction with the twelve Modulative suffixes from <a href="07_suffixes.html#Sec7o4o7">Sec. 
+    7.4.7</a>, the Iteration <span class="style7"><a href="07_suffixes.html#ITNsuffix">ITN</a></span> and Repetition <span class="style7"><a href="07_suffixes.html#RPNsuffix">RPN</a></span> suffixes from Sec. 7.4.5 and the Intensity <span class="style7"><a href="07_suffixes.html#ITYsuffix">ITY</a></span> suffix from Sec. 7.4.10, 
+  Phase becomes an extremely powerful means to describe with great subtlety all 
+  phenomena which display vibratory, oscillative, wavering, on-off, or variative 
+  movement, motion, or intensity. As an example, specific application of the various 
+  phases combined with the aforementioned suffixes and other suffix categories to 
+  a single stem  <strong>-nt-</strong> &#8216;[make] sound&#8217; can give rise to translations for all of the following 
+  English words:</p>
+
+<div align="justify" class="style10">
+  <table width="71%" border="0" align="center" cellpadding="1" cellspacing="1">
+    <tr valign="top">
+      <td width="25%"><font face="Arial, Helvetica, sans-serif">acoustic<br />
+        audible<br />
+        auditory<br />
+        bang<br />
+        blast<br />
+        boom<br />
+        buzz<br />
+        cacophony<br />
+        calm<br />
+        click<br />
+        clickety-clack<br />
+        clink<br />
+        crack<br />
+        crackle<br />
+        crash<br />
+        din<br />
+        discord<br />
+        dissonance<br />
+        drone<br />
+        echo<br />
+        explosion</font></td>
+      <td width="25%"><font face="Arial, Helvetica, sans-serif">faint 
+        sound<br />
+        fizz<br />
+        gag<br />
+        grate<br />
+        hiss<br />
+        howl<br />
+        hullabaloo<br />
+        hum<br />
+        hush<br />
+        jangle<br />
+        kerplunk<br />
+        knock<br />
+        loud(ness)<br />
+        lull<br />
+        moan<br />
+        muffle<br />
+        murmur<br />
+        mute<br />
+        noise<br />
+        pandemonium<br />
+        peal<br />
+      </font></td>
+      <td width="28%"><p><font face="Arial, Helvetica, sans-serif">pit-a-pat<br />
+        plink<br />
+        pop<br />
+        quaver<br />
+        quiet<br />
+        racket<br />
+        rap<br />
+        rat-a-tat<br />
+        rattle<br />
+        raucous<br />
+        resonant<br />
+        reverberate<br />
+        ring<br />
+        roar<br />
+        rumble<br />
+        rush of sound<br />
+        rustle<br />
+        screech<br />
+        shrill<br />
+        silence<br />
+        snap</font></p></td>
+      <td width="22%"><font face="Arial, Helvetica, sans-serif">sonorous<br />
+        sound<br />
+        staccato<br />
+        stifle<br />
+        strident<br />
+        stutter<br />
+        swirl<br />
+        swish<br />
+        tap<br />
+        thump<br />
+        tick<br />
+        toot<br />
+        twang<br />
+        uproar<br />
+        vibration<br />
+        whir<br />
+        whistle<br />
+        whiz<br />
+        whoosh</font></td>
+    </tr>
+  </table>
+</div>
+<p align="justify" class="style10"><br />
+  The same principles applied to other types of stems give rise 
+  to a plethora of complex and subtle means for describing motions, paths, trajectories, 
+  movement in situ, light emanation, reflection, consistency, texture, variation 
+  in shape, visual complexity, etc.</p>
+<p>&nbsp;</p>
+<h3 align="justify">10.1.6 Note on the Absence of Lexico-Semantic &#8220;Classes&#8221;</h3>
+<p align="justify"><span class="style10">It should be noted that in  previous versions of the language, formative roots were divided into lexico-semantic &#8220;classes&#8221; designated by the phonological patterning of the root (there were 17 such classes in the original version of Ithkuil, ten such classes in Ilaksh). In the current version of the language, these lexico-semantic classes have been eliminated, as the author has realized that the establishment of such classes does not serve any real functional purpose in &#8220;real-world&#8221; spoken/written contexts; the ability to identify the semantic class of a stem does not sufficiently aid in understanding the stem&#8217;s specific meaning. Therefore, the  assignment of phoneme patterns to roots in Ithkuil is now arbitrary.  While the astute reader will  note that many roots pertaining to a specific semantic notion (e.g., animals, plant and substance taxonomies, spatial position, etc.) still have similar phonological patterning, such patterning is nevertheless merely incidental and is without formal significance. </span></p>
+<p align="justify">&nbsp;</p>
+<font size="4"><strong><a name="Sec10o2" id="Sec10o2"></a></strong></font><br />
+<table width="100%" border="0" bgcolor="#CCCCCC">
+  <tr>
+    <td><div><font size="4"><strong>10.2 DIMENSIONAL AND DESCRIPTIVE OPPOSITIONS</strong></font></div></td>
+  </tr>
+</table>
+<p align="justify" class="style10">Another area of the lexicon where Western languages tend to 
+  divide up reality into binary oppositions is the realm of spatial dimensions, 
+  where pairs such as <em>near/far, small/large, thin/thick, narrow/wide, tall/short, 
+    light/heavy, hot/cold</em>, etc. are commonplace. As with the perspective-based 
+  oppositions seen in the preceding section, again Ithkuil lexico-semantics treats 
+  such concepts in a wholly different way. Rather than lexicalize such concepts 
+  as pairs of binary oppositions, Ithkuil delineates these qualities as <em>varying 
+    points along a continuous range</em>. In other words, in Ithkuil you do not 
+  say <em>X is cold</em> and <em>Y is hot</em>, but rather <em>X has less temperature</em> and <em>Y has greater temperature</em>. Similarly, one does not say <em>A is 
+    near to me</em> and <em>B is far from me,</em> but rather <em>the distance from 
+      me to A </em>(or proximity of A to me)<em> is less than the distance from me 
+        to B</em> (or proximity of B to me). Note that the choice of translation for 
+  the latter stem as either &#8216;distance&#8217; or &#8216;proximity&#8217; 
+  becomes arbitrary, as the real meaning of the Ithkuil formative is &#8216;amount 
+  of linear space separating one party from another.&#8217; Virtually all Western 
+  descriptive and dimensional oppositions are similarly handled in Ithkuil as 
+  mere variance in the quantity of a single quality, the degree of an attribute, 
+  or the extent along a spatio-temporal range or continuum.</p>
+<p class="style10">&nbsp;</p>
+<p class="style10"><font size="4"><strong><a name="Sec10o3" id="Sec10o3"></a></strong></font></p>
+<table width="100%" border="0" bgcolor="#CCCCCC">
+  <tr>
+    <td><div><font size="4"><strong>10.3 SPATIAL POSITION AND ORIENTATION</strong></font></div></td>
+  </tr>
+</table>
+<p align="justify" class="style10">Concepts of spatial position and orientation are expressed 
+  very differently in Ithkuil as compared to Western languages such as English. 
+  The three major differences are explained below, each of which will be explored 
+  in detail in the sections which follow.</p>
+<p align="justify" class="style10">1) Ithkuil does not employ prepositions; all notions of spatial 
+  relationships, position, and orientation are designated by nominal/verbal formatives.</p>
+<p align="justify" class="style10">2) While Western languages allow spatial/positional reference 
+  to function autonomously irrespective of the speaker&#8217;s cognitive or semantic 
+  intent, Ithkuil subordinates spatial/positional reference at the lexico-semantic 
+  level in deference to the cognitive or semantic purpose of an utterance. What 
+  this means is that sentences describing spatial relationships or positional 
+  reference are only used when the underlying intent of the speaker&#8217;s utterance 
+  is purely to specify spatial or positional reference information. If, in fact, 
+  the underlying intent of the utterance is to show some functional or purposeful 
+  relationship (where a spatial relationship is merely coincidental or consequential), 
+  the Ithkuil sentence will describe this function or purpose, not the spatial 
+  relationship. For example, in answer to the question <em>Where&#8217;s Billy?</em> an English speaker might give answers such as (a) <em>He&#8217;s standing right 
+    next to Sam</em>, or (b) <em>He&#8217;s in bed</em>, or (c) <em>He&#8217;s in 
+      the bathtub</em>. While each of these sentences gives spatial information, only 
+  the first is truly intended to convey spatial information as its purpose, while 
+  sentences (b) and (c) imply information that is, in fact, more relevant than 
+  the spatial information given, e.g., sentence (b) could be restated as &#8216;He&#8217;s 
+  sleeping (or sick),&#8217; while sentence (c) could be restated as &#8216;He&#8217;s 
+  bathing.&#8217; An Ithkuil speaker would not utter sentences like (b) or (c) 
+  in answer to the query about Billy, since he/she would assume the question <em>Where&#8217;s 
+    Billy?</em> is intended to inquire only about Billy&#8217;s physical position 
+  in absolute space. If the questioner had, in fact, been seeking non-spatial 
+  information, he/she would have asked the Ithkuil equivalent of <em>What&#8217;s 
+    Billy doing?</em> or <em>What&#8217;s happening with Billy?</em> to which a 
+  Ithkuil speaker would answer with sentences corresponding to the rephrased versions 
+  of (b) or (c), not their original versions.</p>
+<p align="justify" class="style10">3) Ithkuil utilizes an absolute coordinate system of comparative 
+  spacial reference, not a relative one as found in most languages. Note the positional 
+  ambiguity inherent in sentences such as <em>He&#8217;s standing to the left 
+    of the desk</em>. To be meaningful, the listener must first determine from whose 
+  perspective the speaker is referring (i.e., do we mean the speaker&#8217;s left, 
+  the addressee&#8217;s left, the desk&#8217;s left relative to the position of 
+  the speaker, the desk&#8217;s left relative to the position of the addressee, 
+  or the desk&#8217;s left relative to the direction the desk is oriented/facing?) 
+  Such ambiguity occurs because Western languages employ a relative coordinate 
+  system which can shift from one participant or referent object to another. Ithkuil 
+  spatial reference employs an absolute coordinate system independent of the perspective 
+  of a participant (e.g., the speaker or addressee) or referent object (i.e., 
+  the thing(s) whose position is being described), as opposed to the relative 
+  coordinate system found in Western languages. The Ithkuil system allows listeners 
+  to understand exactly the spatial relationship and orientation of any object(s) 
+  in absolute space, irrespective of anyone&#8217;s (or anything&#8217;s) personal 
+  perspective. </p>
+<h3 align="justify"><br />
+  10.3.1 Formatives vs. Prepositions</h3>
+<p align="justify" class="style10">Besides lexically &#8220;partitioning&#8221; the world of two- 
+  and three-dimensional space in different ways than in Western languages, Ithkuil 
+  has no prepositions. Rather, Ithkuil utilizes formatives which describe a spatial 
+  relationship between two objects or between an object and an associated background, 
+  the nearest translations being a noun meaning &#8220;the area X&#8221; or a 
+  verb meaning &#8220;to be positioned X&#8221;, where X corresponds to a Western 
+  preposition or positional adverb such as &#8220;in&#8221; or &#8220;inside.&#8221;</p>
+<p align="justify">&nbsp;</p>
+<h3 align="justify"> 10.3.2 Underlying Cognitive Purpose of an Utterance</h3>
+<p align="justify" class="style10">Ithkuil grammar considers the functional relationship between 
+  two objects to be primarily relevant, not their spatial orientation or position 
+  relative to each other (or between an object and its background). When it comes 
+  to describing an object against a background or the relationship between two 
+  objects, Ithkuil grammar is more interested in answering the question <em>How 
+    do X and Y function relative to each other</em>, rather than <em>How are X and 
+      Y positioned in space relative to each other?</em> </p>
+<p align="justify" class="style10">For example: in uttering the English sentence <em>The vase 
+  is on the table</em>, is the intention of the sentence to tell the listener 
+  the physical coordinate position of the vase in 3-D space relative to the table, 
+  or to tell the listener that the vase is being physically supported (i.e., against 
+  gravity) by the table? If the intention is the former, the corresponding Ithkuil 
+  sentence would indeed utilize a spatial formative translatable as &#8216;manifest 
+  self on the top side of a surface that is horizontal relative to the direction 
+  of gravity.&#8217; However, if the intention is to actually indicate support 
+  against gravity, the Ithkuil sentence would not utilize a spatial reference 
+  at all, but rather translate the sentence more or less as <em>The table is supporting 
+    the vase</em>. As a result, spatial, locative, or orientational formatives in 
+  Ithkuil are used far less often than corresponding prepositions and spatial 
+  constructions in English or other Western languages. Note the following examples 
+  illustrating how various English sentences utilizing the concept &#8216;in&#8217; 
+  (meaning &#8216;inside&#8217; or &#8216;into&#8217;) are translated into Ithkuil 
+  using various non-spatial roots based on reason or purpose.</p>
+<br />
+<table width="85%" border="1" align="center" cellpadding="3" cellspacing="1">
+  <tr bgcolor="#CCCCCC">
+    <td><div align="center"><strong><font size="2" face="Arial, Helvetica, sans-serif">ENGLISH 
+      SENTENCE </font></strong></div></td>
+    <td><div align="center"><strong><font size="2" face="Arial, Helvetica, sans-serif">CONCEPT 
+      CORRESPONDING TO 'IN(SIDE or INTO)' </font></strong></div></td>
+    <td><div align="center"><strong><font size="2" face="Arial, Helvetica, sans-serif">NEAREST 
+      TRANSLATION TO Ithkuil EQUIVALENT</font></strong></div></td>
+  </tr>
+  <tr valign="top">
+    <td><em>The man works in(side) that building.</em></td>
+    <td><span class="style34">general locational 
+      reference where idea of interiority or containment is incidental</span></td>
+    <td><em>The man works at that building.</em></td>
+  </tr>
+  <tr valign="top">
+    <td><em>The book is in that box.</em></td>
+    <td><span class="style34">physical containment 
+      only with no specific purpose</span></td>
+    <td><em> That box contains the book.</em></td>
+  </tr>
+  <tr valign="top">
+    <td><em>You&#8217;ll find pencils in(side) the small blue can.</em></td>
+    <td><span class="style34">incidental, temporary, 
+      or circumstantial constraint/holder to prevent spillage from gravity</span></td>
+    <td><em>The small blue can holds the pencils you&#8217;re seeking.</em></td>
+  </tr>
+  <tr valign="top">
+    <td><em>I poured soup in(to) the bowl.</em></td>
+    <td><span class="style34">same as above</span></td>
+    <td><em>I enabled the bowl to hold soup</em></td>
+  </tr>
+  <tr valign="top">
+    <td><em>We stayed in(side) due to the rain.</em></td>
+    <td><span class="style34">shelter, containment 
+      for purpose of protection</span></td>
+    <td><em>We shelter ourselves from the rain.</em></td>
+  </tr>
+  <tr valign="top">
+    <td><em>He placed the sword in(side or into) its sheath.</em></td>
+    <td><span class="style34">containment in fitted 
+      covering for purposes of protection</span></td>
+    <td><em>He sheathed the sword.</em></td>
+  </tr>
+  <tr valign="top">
+    <td><em>He stayed in(side) his room.</em></td>
+    <td><span class="style34">containment for purpose 
+      of privacy</span></td>
+    <td><em>He shuttered himself.</em></td>
+  </tr>
+  <tr valign="top">
+    <td><em>The tiger was kept in(side) a cage.</em></td>
+    <td><span class="style34">containment to prevent 
+      escape</span></td>
+    <td><em>The tiger remained captured.</em></td>
+  </tr>
+  <tr valign="top">
+    <td><em>There are high concentrations of lead in(side) that 
+      pottery.</em></td>
+    <td><span class="style34">ingredient, composite 
+      substance </span></td>
+    <td><em>That pottery contains much lead.</em></td>
+  </tr>
+  <tr valign="top">
+    <td><em>Microchips can be found in(side) any machine these 
+      days.</em></td>
+    <td><span class="style34">inherent or integral 
+      component</span></td>
+    <td><em>These days, any machine incorporates microchips.</em></td>
+  </tr>
+  <tr valign="top">
+    <td><em>I put fuel in the gas tank.</em></td>
+    <td><span class="style34">integral component 
+      having function to hold or contain other component</span></td>
+    <td><em>I (re-)fueled the gas tank.</em></td>
+  </tr>
+  <tr valign="top">
+    <td><em>We&#8217;ll never know what&#8217;s in(side) her head.</em></td>
+    <td><span class="style34">intangible containment</span></td>
+    <td><em>We&#8217;ll never know her thoughts.</em></td>
+  </tr>
+  <tr valign="top">
+    <td><em> He has a tumor in(side) his pancreas.</em></td>
+    <td><span class="style34">enveloped to inaccessible 
+      depth by surrounding medium</span></td>
+    <td><em>His pancreas &#8220;harbors&#8221; a tumor.</em></td>
+  </tr>
+  <tr valign="top">
+    <td height="23"><em>He hammered a nail in(to) the wall.</em></td>
+    <td><span class="style34">fastening/connecting</span></td>
+    <td><em>He fastened the nail to the wall with a hammer.</em></td>
+  </tr>
+  <tr valign="top">
+    <td><em>The child tried putting the square block in(side or 
+      into) the round hole.</em></td>
+    <td><span class="style34">fitting together one 
+      object to another</span></td>
+    <td><em>The child tried to fit the round hole and the square 
+      block together.</em></td>
+  </tr>
+</table>
+<p align="justify"><font face="Arial, Helvetica, sans-serif"><span class="style10"><br />
+  </span></font><span class="style10"> This functional prioritization notwithstanding, Ithkuil is nevertheless 
+  able, if necessary, to describe true spatial relationships and orientations 
+  quite specifically. However, it does so in ways that are very unfamiliar in 
+  terms of Western grammar. These are described in the following section.</span></p>
+<h3 align="justify"><a name="Sec10o3o3" id="Sec10o3o3"></a><br />
+  10.3.3 Absolute vs. Relative Spatial/Positional Coordinates</h3>
+<p align="justify" class="style10">While Western languages are capable of describing the physical 
+  position and orientation of object in absolute terms (e.g., <em>My hometown 
+    is located at 93&deg;41'36&quot;W by 43&deg;12'55&quot;N</em>), it is not normal 
+  to do so in general parlance. Rather, Western spatial position and orientation 
+  is normally relative, i.e., described from the dynamic perspective of the two 
+  objects themselves or from the perspective of a third party observer (usually, 
+  but not exclusively, the speaker). Therefore, if I describe the position of 
+  objects in my backyard to you on the telephone, and you have never seen my backyard, 
+  phrases such as &#8216;the swingset is against the wall,&#8217; &#8216;the barbecue 
+  is sitting to my right,&#8217; &#8216;the elm tree is behind the shed&#8217; 
+  and &#8216;the rose bush is beyond the bird fountain&#8217; convey little information 
+  without first having to establish a common frame of reference based on where 
+  the speaker is positioned relative to the edges of the yard (in order to interpret 
+  what he means by &#8216;beyond the fountain&#8217;), which way he is facing 
+  relative to the yard (in order to interpret what he means by &#8216;to my right&#8217;), 
+  perhaps even the orientation of the shape of the yard relative to some external 
+  absolute system of orientation (e.g., the four cardinal directions N, S, E, 
+  W).</p>
+<p align="justify" class="style10">In such a relative scheme concepts such as &#8216;to my right&#8217; 
+  change completely if I turn my body 180 degrees. Confusion also occurs when 
+  I say &#8216;to the left of the chair.&#8217; Do I mean to the left side of 
+  the chair from my (the speaker&#8217;s) perspective? Or do I mean to the left 
+  side of the chair from the perspective of someone sitting in the chair?</p>
+<p align="justify" class="style10">Ithkuil avoids such confusions by being based on an absolute 
+  coordinate system of spatial reference as opposed to a relative system (similar 
+  in nature to the absolute system used in navigation based on the four cardinal 
+  points.). Very few languages on Earth utilize such absolute systems to the exclusion 
+  of relative systems. (Examples include Guugu Yimidhirr, an Australian aboriginal 
+  language; Tzeltal, a Yucatec Mayan language; and Yurok, an Algonquian Indian 
+  language of Northern California). Ithkuil utilizes three different absolute 
+  coordinate schemes, each functioning within a different speech context. These 
+  coordinate systems establish a three-dimensional right-angled coordinate grid 
+  superimposed upon space, with the X-axis reckoned from a line perpendicular 
+  to the direction of gravity (which, for practical purposes, we may term &#8220;horizontal&#8221;), 
+  the Z-axis reckoned by a line corresponding to the direction of gravity (which 
+  may be termed the &#8220;vertical&#8221;) and the all-important Y-axis (which 
+  differentiates a relative system from an absolute) derived from one of three 
+  points of reckoning depending on which coordinate scheme is being utilized. 
+  The three schemes are as follows:</p>
+<p align="justify" class="style10">1) <strong>Solar-based system</strong>. This is the standard 
+  Ithkuil system of reckoning. The line of the Y-axis runs parallel to the rising 
+  and setting points of the sun in mid-summer, with the vector oriented in the 
+  direction of the setting sun. Note that the alignment of this Y-axis relative 
+  to the X-axis is variable; i.e., the line connecting the rising and setting 
+  points of the sun merely designate the <em>direction</em> of the Y-axis, not 
+  it actual position. This is necessary so that descriptions of spatial relationships 
+  can be made using a &#8220;octant locator&#8221; system based on this grid, 
+  where any two objects can be made to lie within different octants relative 
+  to each other (this will be illustrated below). </p>
+<p align="justify" class="style10">Use of this solar-based reckoning system continues at nighttime 
+  and on overcast or rainy days, based on society&#8217;s collective knowledge 
+  and/or recollection of landmarks indicating the rising and setting points of 
+  the sun. Use of this system even continues indoors if there exists a collective 
+  understanding of the orientation of the building/structure/room relative to 
+  the solar-based Y-axis (i.e., everyone in the room can still tell the orientation 
+  of the outdoor Y-axis, whether by sight through windows, or by noticing that 
+  the length-width ratios of the room are aligned with the outdoor Y-axis).</p>
+<p align="justify" class="style10">2) <strong>Length vs. width of enclosed space or room</strong>. 
+  In indoor situations where the orientation of the outdoor solar-based Y-axis 
+  is unknown (or cannot be readily determined on a continuous basis as new speakers 
+  enter the room), an arbitrary Y-axis is connoted by the length of the room in 
+  a direction away from whichever end of the room displays a visibly unique feature 
+  (e.g., the doorway, a window, an alcove, an imposing piece of furniture, a stage 
+  or dais, etc.), this symbolically substituting for the position of the rising 
+  sun. This is the coordinate system which would be employed in theaters, enclosed 
+  banquet halls without windows, and cellars without windows or ready access to 
+  outside orientation.</p>
+<p align="justify" class="style10">3) <strong>Arbitrarily delineated axis based on local landmarks, 
+  objects, or persons</strong>. This is similar to a Western relative system in 
+  which the speaker announces the orientation perspective being utilized. An Ithkuil 
+  speaker would consider this a highly unusual and &#8220;affected&#8221; method 
+  of reckoning. Nevertheless, it is possible to designate a personally defined 
+  reckoning system using words to designate the origin point and direction of 
+  the Y-axis vector, examples translatable by such phrases as &#8216;based on 
+  a vector from me to that large window&#8217; or &#8216;based on a vector between 
+  the shed and the big oak tree.&#8217; In fact, this is the purpose of the NAVIGATIVE case (see <a href="04_case.html#Sec4o7o6">Sec. 4.7.6</a>). 
+  The primary use for this system of reckoning is literary or narrative, such 
+  as when a speaker tells a story of another time and place, in which he/she wishes 
+  to describe spatial relationships solely within the context of the story in 
+  order to convey a mental map or image of the goings-on to his/her audience.</p>
+<p align="justify" class="style10"><br />
+  <strong>10.3.3.1 Describing Spatial Relationships between Two or More Objects</strong>. 
+  Using such a triaxial three-dimensional grid, Ithkuil then lexically divides 
+  up space into &#8220;octants&#8221;, four quadrants to each given &#8220;hemisphere&#8221; 
+  of absolute space delineated by the three axes, for a total of eight octants.</p>
+<blockquote class="style10">
+  <p align="justify"> +X / +Y / +Z = &#8220;right / ahead / above&#8221; = Octant 
+    1 = Root: <strong>-KST-</strong><br />
+    +X / +Y / -Z = &#8220;right / ahead / below&#8221; = Octant 2 = Root: <strong>-K&Scaron;T-</strong><br />
+    +X / -Y / +Z = &#8220;right / behind / above&#8221; = Octant 3 = Root:<strong> -PST-</strong><br />
+    +X / -Y / -Z = &#8220;right / behind / below&#8221; = Octant 4 = Root:<strong> -P&Scaron;T-</strong><br />
+    -X / +Y / +Z = &#8220;left / ahead / above&#8221; = Octant 5 = Root: <strong>-KSP-</strong><br />
+    -X / +Y / -Z = &#8220;left / ahead / below&#8221; = Octant 6 = Root: <strong>-K&Scaron;P-</strong><br />
+    -X / -Y / +Z = &#8220;left / behind / above&#8221; = Octant 7 = Root:<strong> -PSK-</strong><br />
+    -X / -Y / -Z = &#8220;left / behind / below&#8221; = Octant 8 = Root: <strong>-P&Scaron;K-</strong></p>
+</blockquote>
+<p align="justify" class="style10"><br />
+  There are eighteen additional roots corresponding to the above 
+  where either one or two of the X/Y/Z values are zero, indicating concepts equivalent 
+  English phrases such as &#8216;neither above nor below,&#8217; &#8216;straight 
+  down,&#8217; &#8216;straight ahead,&#8217; &#8216;directly behind,&#8217; &#8216;straight 
+  up,&#8217; &#8216;on the same plane as,&#8217; etc. </p>
+<p align="justify" class="style10">The <a href="07_suffixes.html#SSDsuffix"><strong>SSD</strong></a> suffix in turn is used to specify translative movement from a starting octant specified by the stem toward an endpoint specified by the suffix, as follows:</p>
+<table width="75%" border="1" align="center" cellpadding="3">
+  <tr>
+    <td width="10%"><font size="2">Degree 1</font></td>
+    <td width="90%" colspan="2"><font size="2" face="Arial, Helvetica, sans-serif">moving toward Octant 
+      1</font></td>
+  </tr>
+  <tr>
+    <td><font size="2">Degree 2</font></td>
+    <td colspan="2"><font size="2" face="Arial, Helvetica, sans-serif">moving toward Octant  
+      2</font></td>
+  </tr>
+  <tr>
+    <td><font size="2">Degree 3</font></td>
+    <td colspan="2"><font size="2" face="Arial, Helvetica, sans-serif">moving toward Octant  
+      3</font></td>
+  </tr>
+  <tr>
+    <td><font size="2">Degree 4</font></td>
+    <td colspan="2"><font size="2" face="Arial, Helvetica, sans-serif">moving toward Octant  
+      4</font></td>
+  </tr>
+  <tr>
+    <td><font size="2">Degree 5</font></td>
+    <td colspan="2"><font size="2" face="Arial, Helvetica, sans-serif">moving toward a position between octants, (i.e., either X = 0, Y = 0, or Z = 0)</font></td>
+  </tr>
+  <tr>
+    <td><font size="2">Degree 6</font></td>
+    <td colspan="2"><font size="2" face="Arial, Helvetica, sans-serif">moving toward Octant  
+    5</font></td>
+  </tr>
+  <tr>
+    <td><font size="2">Degree 7</font></td>
+    <td colspan="2"><font size="2" face="Arial, Helvetica, sans-serif">moving toward Octant  
+    6</font></td>
+  </tr>
+  <tr>
+    <td><font size="2">Degree 8 </font></td>
+    <td colspan="2"><font size="2" face="Arial, Helvetica, sans-serif">moving toward Octant  
+    7</font></td>
+  </tr>
+  <tr>
+    <td><font size="2">Degree 9</font></td>
+    <td colspan="2"><font size="2" face="Arial, Helvetica, sans-serif">moving toward Octant  
+      8</font></td>
+  </tr>
+</table>
+<p align="justify" class="style10">&nbsp;</p>
+<p align="justify" class="style10">Additionally, the <a href="07_suffixes.html#LCTsuffix"><strong>LCT</strong></a> suffix is used with these roots to identify the location of objects within a specific octant. The above octants are 
+  indicated in the illustrations below.</p>
+<p align="left"><span class="style10">Because the lateral alignment (but not direction) of the solar-based 
+  X and Y-axes are variable (i.e., each can be slid laterally relative to the 
+  other axis), any two objects whose relative positions are to be described can 
+  be made to fall within two different octants, as illustrated in figures A, 
+  B, C and D below (Figure A represents the background context for which Figures 
+  B, C and D present varying positional frames of reference).</span><br />
+  <br />
+  </p>
+<p align="center"><img src="/images/10-4-3-1a.gif" width="593" height="354" /> </p>
+<blockquote>
+  <p align="center"> <img src="/images/10-4-3-1b.gif" width="361" height="402" /></p>
+  <p>&nbsp;</p>
+  <p align="center"><img src="/images/10-4-3-1c.gif" width="354" height="394" /></p>
+</blockquote>
+<p>&nbsp;</p>
+<blockquote>
+  <p align="center"><img src="/images/10-4-3-1d.gif" width="352" height="369" /></p>
+</blockquote>
+<p align="justify"><br />
+  <span class="style10">It is the ability to &#8220;slide&#8221; the axes of this three-dimensional 
+  grid that allows Ithkuil to easily describe the relative position of objects 
+  in an absolute manner. Because the grid can be arranged so that any two objects 
+  each fall into different octants, a series of octant-to-octant relationships 
+  between the two objects can be lexified. Thus, each of the above roots has a 
+  stem which, in conjunction with a set of affixes, designates a spatial relationship 
+  between an object occupying that octant and a second object occupying any 
+  of the seven other octants. For the purpose of this analysis, we will call 
+  each of these octant-to-octant static relationships a &#8220;positional 
+  frame.&#8221; (the leftover affixes refer to (1) 1st object in motion while 
+  2nd object at rest, and (2) 2nd object in motion while first object at rest. 
+  Used to mark the participant nouns with motion sentences described below.) </span></p>
+<p align="justify" class="style10">Additionally, such a positional reference system allows a speaker 
+  to describe exactly the spatial relationships between two objects in motion relative 
+  to each other. This is done in Ithkuil by stating that two object are moving 
+  from positional frame A toward positional frame B. If one remembers that, by 
+  &#8220;positional frame&#8221; we mean a spatial relationship between two objects, 
+  not a specific location in space, it can be seen how such a simple formula easily 
+  describes the relative trajectories of two objects. An Ithkuil speaker is describing 
+  exactly how two objects are moving through space by stating in one short sentence 
+  the octant-to-octant relationship the two objects have to start with, and 
+  the octant-to-octant relationship they will have when the motion is ended. 
+  The root used to describe the motion indicates the nature of the motion in terms 
+  of its smoothness, speed, etc.</p>
+<p align="justify" class="style10">To insert a third party into a positional frame (such as describing 
+  where the speaker or addressee or third party is situated relative to the two 
+  objects described in the positional frame) a case-frame clause is added to the 
+  sentence in the concursive case (&#8220;while/during/at the time of&#8221;) 
+  which states the positional frame between that third party and the FIRST party 
+  (unless the 2nd party is overtly specified). Example: &#8220;The dog and the 
+  ball M&#8217;d while the cat N&#8217;d,&#8221; where M is the positional frame 
+  of the dog and ball and N is the positional frame between the cat and dog.</p>
+<p align="justify"><span class="style10">Based on the above, we can see just how exact Ithkuil can be 
+  in describing relative position between objects in an absolute manner. This 
+  is best illustrated by narrowly translating into English an Ithkuil sentence 
+  which describes a three-party positional situation.</span><br />
+</p>
+<blockquote>
+  <p align="left"><span class="style10"><strong><br />
+  </strong></span></p>
+  <p><span class="style9"><img src="/images/10-4-3-1.jpg" width="359" height="45" /><br />
+    Qi&rsquo;&ecirc;lafs&nbsp; &acirc;mmul&nbsp; &acirc;hiogwokstat&uuml;kai  &nbsp;&iacute;xi&rsquo;asa&nbsp;  a&ccedil;t<sup>h</sup>u&nbsp; p&scaron;t&acirc;&rsquo;at.<span class="style10"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span><span class="style9"><br />
+    </span><span class="style34">STA-&lsquo;woman&rsquo;-CNR-NRM/DEL/M/CSL/UNI-MVT<span class="style32">1</span>/5-IFL &nbsp;&nbsp; STA-&lsquo;child&rsquo;-ABS-NRM/DEL/M/CSL/UNI-IFL &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <br />
+    NNR-CNF-DYN- [incorp. stem: &lsquo;run&rsquo;]-<span class="style8"><strong>&lsquo;Octant-1&rsquo;</strong></span>-NRM/DEL/U/CSL/UNI-<span class="style40">SSD<span class="style32">1</span>/8</span>-IFL-EXS/ISR &nbsp;&nbsp;&nbsp;&nbsp;FRAMED-DYN-&lsquo;see&rsquo;-CNR-NRM/PRX/M/CSL/UNI-FML&nbsp;&nbsp; <br />
+    Ref2:OBL-Ref1:1m/Ref2:ua-Ref1:IND  &nbsp;&nbsp;&nbsp;&nbsp; STA-<span class="style40">&lsquo;Octant-4&rsquo;-LOC</span>-NRM/DEL/U/CSL/UNI-IFL</span><span class="style9"><br />
+    </span></p>
+</blockquote>
+<p align="justify" class="style10"><br />
+  There is no way to translate this Ithkuil sentence into everyday 
+  English except via inadequate approximation, thus: <em>The woman stood still 
+    as   the boy ran from ahead and above her, then past her, while 
+    I watched them from behind and below</em>. However, a more exact, narrow translation 
+  of this sentence, capturing all of the positional/orientational specificity 
+  of the original, would run as follows: <br />
+</p>
+<blockquote class="style10">
+  <p align="justify"><em>As the woman held still,  the boy ran from 
+    a position above, ahead of, and to the right of her relative to the direction 
+    of the sunrise-to-sunset vector, a plane perpendicular to it, and the axis 
+    of gravity, toward a position still above, but behind and to the left of her 
+    relative to the same directional vector, perpendicular plane and gravitational 
+    axis, as I was watching them from below, behind, and to the right of her relative 
+    to the same vector, plane, and axis.</em><span class="style8"><br />
+  </span></p>
+</blockquote>
+<div align="justify" class="style10"></div>
+<p class="style10">&nbsp;</p>
+<p><font size="4"><strong><a name="Sec10o4" id="Sec10o4"></a></strong></font></p>
+<table width="100%" border="0" bgcolor="#CCCCCC">
+  <tr>
+    <td><div><font size="4"><strong>10.4 LEXICAL GENERALIZATION</strong></font></div></td>
+  </tr>
+</table>
+<p align="justify" class="style10">In a word-for-word comparison to a Eurocentric vocabulary, 
+  especially one as large as that of English, the Ithkuil lexicon appears very 
+  overgeneralized in many respects. At first impression, it appears that shades 
+  of meaning expressed by multiple words in English are expressed by only one 
+  root in Ithkuil. As we have seen repeatedly throughout this work, this is primarily 
+  due to the fact that shades of meaning for a single underlying cognitive concept 
+  are normally differentiated at the morphological level in Ithkuil, as opposed 
+  to the lexical. Nevertheless, there are several lexico-semantic areas where 
+  Ithkuil truly does generalize in comparison to Western languages. This occurs 
+  primarily where (1) Western vocabulary distinguishes separate lexemes for a 
+  redundant concept based on different participants to, practitioners of, or manifestations 
+  of that concept, and (2) where lexification is at an arbitrarily detailed or 
+  particularized level. These topics are discussed in detail in the following 
+  sections.</p>
+<h3 align="justify"><br />
+  10.4.1 Consolidation of Unnecessary Distinctions</h3>
+<p align="justify" class="style10">As an example of lexical generalization in Ithkuil (or over-lexicalization 
+  in English!), compare the following words for animal vocal sounds: <em>meow, 
+    bark, whinny, chirp, moo, bray</em>, etc. Each of these words mean merely to 
+  make one&#8217;s species-specific inherent vocal sound. Ithkuil utilizes only 
+  a single stem for this concept (essentially meaning <em>vocal sound/vocalize</em> &#8211; from the same root which gives the stem for <em>(human) voice</em>), 
+  based on the logical assumption that, since cats can&#8217;t bark, whinny or 
+  moo, and dogs can&#8217;t meow, whinny or moo, there is no need to differentiate 
+  lexically the innate vocal sound being made by an animal if the animal making 
+  the sound is identified in the sentence. Of course, one might argue that English 
+  allows for metaphorical or similative application of such words, as in <em>The 
+    sergeant barked out orders to the platoon</em>, or <em>The baby squealed in 
+      delight.</em> Such constructions are perfectly captured in Ithkuil via the <a href="04_case.html#Sec4o5o9">ESSIVE</a> and <a href="04_case.html#Sec4o5o10">ASSIMILATIVE</a> cases, as in <em>He &#8216;vocalized&#8217; the orders like a dog</em>, or <em>The 
+        baby &#8216;vocalized&#8217; like a baby piglet from feeling delight,</em> or 
+via the manipulation of Function, Incorporation and Format (see <a href="05_verbs_1.html#Sec5o1">Sections 5.1</a> and <a href="06_verbs_2.html#Sec6o4">6.4</a>).</p>
+<p align="justify" class="style10">Similar series of English words which reduce to a single stem 
+  in Ithkuil would be (1) <em>herd, flock, pride, gaggle</em>, etc.; (2) <em>hair, 
+    fur, fleece, coat</em>, etc.; (3) <em>skin, hide, pelt, pellicle, peel, rind, 
+      lambskin, leather, integument</em>, etc.</p>
+<p align="justify">&nbsp;</p>
+<h3 align="justify"> 10.4.2 Translative Motion, Paths and Trajectories</h3>
+<p align="justify" class="style10">By translative motion is meant the idea of an object moving 
+  (or being moved) from one location to another. English is particularly rich 
+  in its vocabulary to describe the various paths or trajectories of such an object, 
+  not only in regard to the &#8220;shape&#8221; or form of the path or trajectory, 
+  but also the means of initiating the movement. Thus we have terms such as <em>to 
+    toss, throw, pitch, hurl, fling, roll, run</em>, or <em>pass</em> a ball or 
+  other object. In reaching its destination, the object can <em>fly, float, wing, 
+    pass, arc, sail, plummet, drop, fall, thread, hop, leap, bounce, roll, zig-zag, 
+    slide, glide, slither</em>, or <em>jump</em> its way there.</p>
+<p align="justify" class="style10">As we have seen to be the case in other contexts, Ithkuil lexifies 
+  concepts of translative motion with a focus on the contexts of purpose and outcome, 
+  not on the &#8220;innate structure&#8221; of the event as an end in itself. 
+  Essentially, Ithkuil is less concerned with how the object gets there and is 
+  more concerned about why it&#8217;s going there and whether it arrives. For 
+  example, look at the following two columns of English sentences :</p>
+<div align="justify"><br />
+  <table width="65%" border="0" cellspacing="1" cellpadding="1">
+    <tr>
+      <td width="55%"><blockquote class="style10">
+        <p><em>I tossed it into 
+          the basket.</em></p>
+      </blockquote></td>
+      <td width="45%"><span class="style10"><em>It sailed 
+        into the basket.</em></span></td>
+    </tr>
+    <tr>
+      <td><blockquote class="style10">
+        <p><em>I flung it into the 
+          basket.</em></p>
+      </blockquote></td>
+      <td><span class="style10"><em>It flew into the basket.</em></span></td>
+    </tr>
+    <tr>
+      <td><blockquote class="style10">
+        <p><em>I hurled it into 
+          the basket.</em></p>
+      </blockquote></td>
+      <td><span class="style10"><em>It arced its way into 
+        the basket.</em></span></td>
+    </tr>
+    <tr>
+      <td><blockquote class="style10">
+        <p><em>I pitched it into 
+          the basket.</em></p>
+      </blockquote></td>
+      <td><span class="style10"><em>It fell into the basket.</em></span></td>
+    </tr>
+  </table>
+</div>
+<p align="justify"><font color="#000000"><br />
+  </font><span class="style10">The sentences in the lefthand column 
+  describes how I initiate the action while those in the righthand column describe 
+  how the object moves. In Ithkuil the lefthand column of sentences would normally 
+  all be translated by a single sentence narrowly translatable as <em>I made it 
+    end up inside the basket</em>, while the righthand column of sentences would 
+  all be translated by the exact same sentence minus the <a href="04_case.html#Sec4o3o4">ERGATIVE</a> personal referent <em>I</em>, thus: <em>It ended up inside the basket</em>.</span></p>
+<p align="justify" class="style10">So where are the words translating the range of descriptive 
+  nuance surrounding the means of sending it into the basket and the different 
+  trajectories it takes there? In normal Ithkuil speech, such distinctions would 
+  be considered irrelevant. This is because Ithkuil grammar questions all acts, 
+  conditions and events as to their underlying cognitive purpose. For the above 
+  sentences, Ithkuil views them as all having the same underlying purpose: to 
+  express that I have caused an object to pass from a state of being in my alienable 
+  possession to a state of being within the basket, by passing through the physical 
+  space between me and the basket. Therefore there is only one translation for 
+  the varying sentence pairs.</p>
+<p align="justify" class="style10">Before the reader begins to think that Ithkuil is incapable 
+  of distinguishing the shades of meaning present in the above examples, it should 
+  be noted that such distinctions can be easily rendered by additional affixes 
+  and words describing these concepts. For example, if it is truly necessary to 
+  indicate that the object was &#8220;flung&#8221; into the basket, Ithkuil can 
+  augment the sentence <em>I made it end up inside the basket</em> to include 
+  affixes which indicate use of the hand in a sudden recoil-like motion plus affixes 
+  indicating forceful and rapid arrival into the basket, the result being narrowly 
+  translatable as <em>Using my hand in a sudden, subtle, recoil-like motion I 
+    caused it to move quickly away and end up forcefully inside the basket</em>.</p>
+<p align="justify" class="style10">While this would more or less accurately capture the nuances 
+  of English &#8220;flung,&#8221; Ithkuil first makes us stop and ask ourselves, 
+  why is it even necessary to describe the details of the trajectory and the force 
+  initiating it? After all, in a normal everyday contextual setting, if an English 
+  speaker were to use the verb &#8220;tossed&#8221; or &#8220;threw&#8221; or 
+  &#8220;placed&#8221; or &#8220;put&#8221; instead of &#8220;flung&#8221; in 
+  the above sentence, would his/her speaker be considered to have been given information 
+  any less sufficient or essential for understanding the message and its purpose? 
+  All of which again illustrates the dynamism of Ithkuil lexico-semantics: if 
+  a complex, highly detailed morphology already conveys a high degree of semantic 
+  and cognitive nuance, why belabor the obvious by reinforcing such nuances at 
+  the lexical level if the context and underlying cognitive purpose of the utterance 
+  does not require it? Thus the Ithkuil language not only captures levels of cognitive 
+  detail beyond the scope of Western languages, but it also allows the speaker 
+  to avoid having to provide such detail when it is inessential.</p>
+<p align="justify">&nbsp;</p>
+<h3 align="justify"> 10.4.3 No Lexification of Specific Instances of Underlying 
+  Processes</h3>
+<p align="justify" class="style10">In regard to over-lexification in English from a Ithkuil perspective, 
+  an example would be <em>limp</em>, as in &#8216;to walk with a limp.&#8217; 
+  Ithkuil recognizes that, in observing a person walking with a limp, it is not 
+  the condition <em>per se</em> that is relevant, but rather the manner in which 
+  the condition causes the person to move, i.e. asymmetrically, irregularly, discontinuously 
+  in an unexpected way inconsistent with a &#8220;normal&#8221; or &#8220;standard&#8221; 
+  expectation of walking. Ithkuil speakers would consider English <em>limp</em> to represent an arbitrarily specific occurrence of an underlying state of translative 
+  movement. To a Ithkuil speaker, what is important is the way the person moves. 
+  The idea that a person continues to &#8220;have a limp&#8221; even when sleeping 
+  or sitting is considered absurd. What the person &#8220;continues to have&#8221; 
+  is an underlying physical injury, abnormality, disability, illness, or deformity 
+  which causes the person to move asymmetrically when walking. Therefore, instead 
+  of <em>He has a limp because of his war wound,</em> a Ithkuil speaker would 
+  say <em>He walks asymmetrically/irregularly because of his war wound</em>. </p>
+<p align="justify" class="style10">To illustrate this by analogy, consider a person who, when 
+  dancing to rock music, has a tendency to jerk his/her head to the left at the 
+  sound of the downbeat. Most English speakers would consider it ludicrous over-lexicalization 
+  to propose a verb &#8220;spreggle&#8221; meaning &#8216;to jerk one&#8217;s 
+  head to the left on the downbeat when dancing,&#8217; as in the hypothetical 
+  sentence <em>She spreggles to rock music</em>. Yet, from the Ithkuil standpoint, 
+  there is no difference in arbitrariness between the hypothetical &#8220;spreggle&#8221; 
+  and the actual word &#8216;limp.&#8217;</p>
+<p align="justify" class="style10">Based on a combination of the above reasoning surrounding both 
+  animal vocal sounds and &#8216;limp,&#8217; Ithkuil has no words for &#8216;blind(ness),&#8217; 
+  &#8216;deaf(ness),&#8217; &#8216;mute(ness),&#8217; &#8216;dementia,&#8217; 
+  or &#8216;paralysis.&#8217; In Ithkuil, one simply says <em>He can&#8217;t see, 
+    She can&#8217;t hear, She can&#8217;t speak, He can&#8217;t think, He can&#8217;t 
+    move</em>, or alternately <em>His faculty of sight </em>(or other sense or innate 
+  faculty)<em> doesn&#8217;t function/no longer functions</em>. [Note: each of 
+  these sentences would, of course, employ appropriate morphological markers, 
+  case, voice, degrees of affixes, etc. to indicate the extent of functional loss, 
+  whether temporary or permanent, whether increasing or decreasing, whether externally 
+  caused or inherently developed, etc.]</p>
+<p>&nbsp;</p>
+<p><font size="4"><strong><a name="Sec10o5" id="Sec10o5"></a></strong></font></p>
+<table width="98%" border="0" cellpadding="0" cellspacing="0" bgcolor="#CCCCCC">
+  <tr>
+    <td><div><font size="4"><strong>10.5 LEXICAL DIFFERENTIATION</strong></font></div></td>
+  </tr>
+</table>
+<p align="justify" class="style10">While we have examined the many ways in which the dynamism 
+  and logic of Ithkuil grammar eliminates whole swaths of equivalent English vocabulary, 
+  there are, nevertheless, many concepts where Ithkuil provides autonomous lexical 
+  roots and stems for which neither English nor other Western languages provide 
+  similar words and must resort to paraphrase in order to translate. Such concepts 
+  are particularly found in the realm of human emotions, social relationships, 
+  functional interrelationships between objects, philosophy, psychology, and sensory 
+  phenomena. </p>
+<p align="justify" class="style10">Underlying such differentiation is the idea that the Ithkuil 
+  language is meant to reflect in linguistic terms as close a representation of 
+  human cognition and pre-linguistic epistemological categorization as is possible 
+  in language without resorting to outright linguistic representations of pure 
+  mathematical logic. Since the inner mental life of the speaker is often clouded 
+  in vagueness or artificial &#8220;surface&#8221; categories once represented 
+  in spoken languages such as English and other Eurocentric languages, a language 
+  which is focused on representing that inner mental life will necessarily require 
+  many more words to describe that life than are commonly available in existing 
+  human languages. </p>
+<p>&nbsp;</p>
+<p><font size="4"><strong><a name="Sec10o6" id="Sec10o6"></a></strong></font></p>
+<table width="99%" border="0" cellpadding="0" cellspacing="0" bgcolor="#CCCCCC">
+  <tr>
+    <td><div><font size="4"><strong>10.6 COMPARISON TO WESTERN CATEGORIZATION</strong></font></div></td>
+  </tr>
+</table>
+<p align="justify" class="style10">Western languages have several words and/or concepts for which 
+  there is no exactly corresponding equivalent in Ithkuil. These include the concepts 
+  embodied in the verb &#8220;to be&#8221; and &#8220;to have.&#8221; Ithkuil 
+  has no way of truly expressing copula identification corresponding to &#8220;be&#8221; 
+  or &#8220;being&#8221;, nor any direct translation of possession or ownership 
+  equivalent to &#8220;have.&#8221; Essentially this is because Ithkuil grammar 
+  and lexico-semantics do not recognize inherent existential identification or 
+  inherent existential possession as true semantic functional categories or fundamental 
+  cognitive primitives.</p>
+<h3 align="justify"><br />
+  10.6.1 Translating &#8220;To Be&#8221;</h3>
+<p align="justify" class="style10">Ithkuil grammar inherently recognizes that the universe is, 
+  at any and all moments, and on all scales large and small, in a state of flux. 
+  The idea that any given entity can be permanently or innately identified as 
+  &#8220;being&#8221; some other entity is considered nonsensical. Ithkuil grammar 
+  has no way of clearly indicating any such notions as &#8220;being&#8221; or 
+  &#8220;to be,&#8221; as the universe is a universe of actions or states that 
+  are the results of actions. Even states, as such, are in flux and different 
+  from moment to moment, if only because the mere passage of time itself renders 
+  the &#8220;static&#8221; condition different than it was the moment before. 
+  Therefore, one cannot &#8220;be&#8221; anything else, or for that matter &#8220;be&#8221; 
+  anything at all. Rather, one &#8220;does&#8221; or &#8220;functions as&#8221; 
+  or &#8220;fulfills a role as&#8221; or &#8220;manifests itself as&#8221; something 
+  else. Fundamental to Ithkuil grammar are the notions of function and purpose, 
+  not mere description; results, not mere means; manifestation, not mere existence. 
+  This explains why there is no true distinction between nouns and verbs in Ithkuil, 
+  both being mere differences in functional roles played by any given formative 
+  concept whose underlying meaning is not inherently nominal or verbal, but rather 
+  a conceptual primitive waiting to be manifested as either (1) a representation 
+  of an action, process, or event, (i.e., a verb), or (2) as a concrete or abstract 
+  entity that is representative of, or embodies the underlying concept (i.e., 
+  a noun).</p>
+<p align="justify" class="style10">So, an Ithkuil speaker does not say <em>I am John, She is a 
+  cook, The leaf is green, Stan is ill,</em> or <em>Murder is wrong,</em> but 
+  rather <em>One calls me John, She cooks [for a living], The leaf [currently] 
+    manifests a green color, Stan feels ill [or carries a disease],</em> and <em>Murder 
+      controverts morality</em>.</p>
+<p align="justify" class="style10 style10">&nbsp;</p>
+<h3 align="justify" class="style10">10.6.2 Translating &#8216;To Have&#8217;</h3>
+<p align="justify" class="style10">In regard to &#8220;have&#8221; or &#8220;having,&#8221; Ithkuil 
+  views the concept of possession as breaking down into more specific functional 
+  states and categories, each operating independently and having little relation 
+  to each other. The neutral, default way of expressing &#8220;to have&#8221; involves placing the possessor in the DATIVE case and utilizing the MANIFESTIVE function of the verb, so that the phrase <em>&#8220;I have a book&#8221;</em> translates more or less as <em>&#8220;There is a book to me.&#8221;</em><br />
+</p>
+<h3 align="justify" class="style10">&nbsp;</h3>
+<h3 align="justify" class="style10"> 10.6.3 &#8216;Yes,&#8217; &#8216;No&#8217; and Other Interjections</h3>
+<p align="justify" class="style10">As there are no interjections in Ithkuil, there are no true 
+  equivalents to &#8220;yes&#8221; and &#8220;no&#8221; in Ithkuil. Nevertheless,  Ithkuil grammar also allows for the use of Bias suffixes (see <a href="05_verbs_1.html#Sec5o11">Sec. 5.11</a>) to function 
+  as autonomous words to convey attitudes and emotional responses similarly to 
+  interjections in Western languages. This phenomenon has already been discussed 
+  in <a href="08_adjuncts.html#Sec8o4">Section 8.4</a>. 
+  Additionally, <a href="08_adjuncts.html#Sec8o3">Section 
+    8.3</a> described how affixual adjuncts may be used to convey information similarly 
+  to autonomous interjections.</p>
+<h3>&nbsp;&nbsp;</h3>
+<h3>10.6.4  &ldquo;WH&rdquo;-Questions</h3>
+<p class="style10">Ithkuil has no equivalent to WH-question words such  as <em>what? where? when? why? how?</em> etc.&nbsp;  Instead, statements are made using DIRECTIVE illocution (and hopefully SOLICITIVE bias) to provide the  desired information.&nbsp; Thus, instead of  asking &ldquo;Where is the toilet?&rdquo; or &ldquo;What is your name?&rdquo; one says &ldquo;Please state the  toilet&rsquo;s location&rdquo; and &ldquo;Please identify yourself.&rdquo; </p>
+<h3 align="justify" class="style10">&nbsp;</h3>
+<h3 align="justify" class="style10">  10.6.5 Translating Metaphorically Structured Phrases </h3>
+<p align="justify" class="style10">Ithkuil grammar recognizes that much of our understanding and 
+  expression of everyday experience is structured in terms of metaphor and metonymy 
+  (the latter being the reference to an entity by one of its attributes, associations 
+  or activities, as in <em><strong>The ham-and-cheese</strong> wants fries with 
+    his order</em> or <em><strong>The White House</strong> has its nose in our business</em>). 
+  Ithkuil allows for the overt designation of metaphorical concepts by several 
+  means. These include the <a href="03_morphology.html#Sec3o6o3">REPRESENTATIONAL</a> context, stem <a href="06_verbs_2.html#Sec6o4">incorporation</a>, 
+  the <a href="07_suffixes.html#METsuffix">metonymic MET </a> affix 
+  -<font face="Arial, Helvetica, sans-serif"><strong>qt</strong></font>, 
+  and the two <a href="07_suffixes.html#PTFsuffix">part-whole 
+    PTF and PTG suffixes</a> -<span class="style36">rs</span> and -<span class="style36">&#353;</span>.</p>
+<p align="left"><font face="Arial, Helvetica, sans-serif"><strong><a href="https://www.ithkuil.net/Ch-11%20The%20Script.htm"></a></strong></font> &nbsp;</p>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+    
+  </body>
+</html>

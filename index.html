@@ -1,0 +1,851 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="http://localhost/">
+      
+      
+      
+        <link rel="next" href="1/">
+      
+      
+      <link rel="icon" href="icob.svg">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.7">
+    
+    
+      
+        <title>Ithdocs</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.8608ea7d.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="style.css">
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="red" data-md-color-accent="red">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#introduction" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="." title="Ithdocs" class="md-header__button md-logo" aria-label="Ithdocs" data-md-component="logo">
+      
+  <img src="ico.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Ithdocs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Intro
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="." title="Ithdocs" class="md-nav__button md-logo" aria-label="Ithdocs" data-md-component="logo">
+      
+  <img src="ico.svg" alt="logo">
+
+    </a>
+    Ithdocs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Intro
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="." class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Intro
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1 Phonology
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2 Morphophonology
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3 Basic Morphology
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    4 Cases
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    5 Verbs
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="6/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    6 More Verbs
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="7/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    7 Suffixes
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="8/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    8 Adjuncts
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="9/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    9 Syntax
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="10/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    10 Lexicosemantics
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="11/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    11 Script
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="12/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    12 Numbers
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="lexicon/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lexicon
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="abbr/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Abbreviations
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_16" >
+        
+          
+          <label class="md-nav__link" for="__nav_16" id="__nav_16_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Appendix
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_16_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_16">
+            <span class="md-nav__icon md-icon"></span>
+            Appendix
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="update/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Updates
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="supp/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Supplemental Lexicon
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="addsuff.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Additional Suffixes
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="errata/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Errata
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>Intro</h1>
+
+<h2 id="introduction">Introduction</h2>
+<p>These webpages present the grammar of an artificially constructed language,
+<strong>Ilaksh</strong>.  For those readers already familiar with my constructed language
+Ithkuil v1, this new language, Ilaksh, represents a revision of the Ithkuil language to
+allow easier pronunciation for those persons who have an interest in trying to
+speak Ithkuil but are daunted by the complex phonology (sound system).  The
+revision consists mostly of a simplification of the phonology of the language
+and a complete restructuring of the morpho-phonology.  While most of the
+morphology of the original Ithkuil remains intact, I have taken the
+opportunity to revise several morphological elements with which I’ve been less
+than satisfied.</p>
+<p>Like Ithkuil, the purpose of Ilaksh is to present a philosophical design for a
+hypothetical language featuring extreme morpho-phonological conciseness while
+overtly presenting a much deeper level of human cognition than is found in
+natural human languages, i.e., maximal communication of underlying cognitive
+intent coupled with maximal morpho-phonological efficiency.</p>
+<p>The specific differences found in Ilaksh compared to Ithkuil are as follows:</p>
+<ul>
+<li>
+<p>The number of phonemes (i.e., relevant speech sounds) has been reduced from 82 to 40.  I have eliminated what many readers would consider the most difficult-to-pronounce phonemes.  Specifically, the number of consonants has been reduced from 65 to 30 and the number of vowels from 17 to ten.  In partial compensation of this reduction, however, Ithkuil’s five tones have been increased to seven in Ilaksh.  Tone also plays a more pervasive role in Ilaksh than in Ithkuil.</p>
+</li>
+<li>
+<p>The reduction in total phonemes has required a drastic restructuring of Ithkuil’s morpho-phonology, i.e., the patterns in which phonemes (speech sounds) are mapped to morphemes (meaningful word-components).  All in all, Ilaksh is more agglutinative and less synthetic in its grammar than Ithkuil.  As a result, Ilaksh looks and sounds rather differently than Ithkuil, and the structure of the words is different as well.  Therefore, to all surface appearances, both visual and aural, Ilaksh is a different language than Ithkuil.</p>
+</li>
+<li>
+<p>Ithkuil’s four Levels have been expanded to 18 in Ilaksh.</p>
+</li>
+<li>
+<p>Ithkuil’s 81 noun cases have been consolidated to 72 in Ilaksh. However, a system of 24 new specialized noun cases have been added which operate in conjunction with the expansion of the Level categories, resulting in a total of 96 noun cases in Ilaksh.</p>
+</li>
+<li>
+<p>Ithkuil’s nine Validations (evidential categories) have been expanded to 14 in Ilaksh.</p>
+</li>
+<li>
+<p>The Ithkuil category of Focus has been eliminated as a morphological category in Ilaksh.  Topic and Focus are primarily handled at the syntactic level in Ilaksh rather than at the morphological level.  As a result, word-order is more important in Ilaksh than in Ithkuil.</p>
+</li>
+<li>
+<p>The 259 Derivations of Ithkuil verbs, used to expand upon the seven basic verb Conflations, have been eliminated.  Instead, Ilaksh now allows the option to incorporate <em>any</em> formative stem into a verbal stem, i.e., Ilaksh verbs are optionally incorporative. The category of Conflation has been renamed Function and an additional Function has been added bring the number to eight, compared to Ithkuil's seven. </p>
+</li>
+<li>
+<p>The HORTATIVE has been moved from a Validation category to an Illocution category.  </p>
+</li>
+<li>
+<p>The number of morpho-semantic classes of formative stems has been reduced from 17 in Ithkuil to ten in Ilaksh.   </p>
+</li>
+<li>
+<p>Ilaksh uses a completely different writing system than Ithkuil.  The new system is non-linear and two-dimensional, and almost entirely morphemic in nature, as opposed to the morpho-phonemic script used for Ithkuil (a sample of Ilaksh writing is visible above in the header/title area of this page). </p>
+</li>
+</ul>
+<p>I wish to thank all of those who have taken an interest in Ithkuil and who
+have patiently looked forward to Ilaksh. I hope you find the new site
+interesting. And I especially wish to thank Stanislav Kozlovskiy, whose 2004
+article “The Speed of Thought” brought Ithkuil to the attention of so many
+people. Спасибо, Стас! Thanks also to Lexa Samons for his hard work in
+translating the original <a href="https://web.archive.org/web/20090311041814/http://ithkuil-
+russian.narod.ru/">Ithkuil site into
+Russian</a>.</p>
+<pre><code>                                                                           — _John Quijada_  
+                                                                         June, 2007
+</code></pre>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": ".", "features": [], "search": "assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+    
+  </body>
+</html>
